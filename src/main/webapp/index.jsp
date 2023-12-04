@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>猫猫阅读</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon-new.ico" type="image/x-icon" />
 </head>
 <body>
 <h1><%= "Hello World!" %>
