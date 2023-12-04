@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>猫猫阅读</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
