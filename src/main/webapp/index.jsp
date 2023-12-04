@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <h1><%= "Hello World!" %>
