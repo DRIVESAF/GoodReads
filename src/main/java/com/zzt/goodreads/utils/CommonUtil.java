@@ -1,4 +1,4 @@
-package com.zzt.goodreads.util;
+package com.zzt.goodreads.utils;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

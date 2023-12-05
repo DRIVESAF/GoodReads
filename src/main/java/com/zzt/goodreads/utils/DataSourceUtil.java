@@ -1,4 +1,4 @@
-package com.zzt.goodreads.util;
+package com.zzt.goodreads.utils;
 
 import javax.sql.DataSource;
 import java.io.InputStream;

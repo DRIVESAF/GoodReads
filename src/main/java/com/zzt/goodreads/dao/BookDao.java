@@ -1,7 +1,7 @@
 package com.zzt.goodreads.dao;
 
 import com.zzt.goodreads.entity.Book;
-import com.zzt.goodreads.util.DataSourceUtil;
+import com.zzt.goodreads.utils.DataSourceUtil;
 import org.apache.commons.dbutils.*;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
