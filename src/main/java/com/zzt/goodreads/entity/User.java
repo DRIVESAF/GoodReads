@@ -22,8 +22,7 @@ public class User {
     private String password;
     private Boolean isAdmin;
     private Boolean isValidate;
-    private String userStatus;
     private String address;
-    private Integer phone;
+    private String phone;
 
 }
