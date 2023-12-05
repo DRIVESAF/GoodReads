@@ -1,7 +1,7 @@
 package com.zzt.goodreads.service.exception;
 
 /**
- * @author mqxu
+ * @author ctynt
  * @Date 2023/2/27
  * @Description 登录自定义异常
  **/
