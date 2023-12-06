@@ -9,5 +9,5 @@ import com.zzt.goodreads.entity.User;
  */
 
 public interface UserMapper {
-    User selectByUserName(String phone);
+    User selectByUserPhone(String phone);
 }

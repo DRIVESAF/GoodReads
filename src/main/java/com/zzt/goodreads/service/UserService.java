@@ -14,9 +14,9 @@ import com.zzt.goodreads.utils.MyBatisUtils;
 
 public class UserService {
     public User login(String phone, String password) {
-        User user = (User) MyBatisUtils.executeQuery(sqlSession -> sqlSession.<User>selectOne("com.zzt.goodreads.mapper.UserMapper.selectByUserName", phone));
+        User user = (User) MyBatisUtils.executeQuery(sqlSession -> sqlSession.<User>selectOne("com.zzt.goodreads.mapper.UserMapper.selectByUserPhone", phone));
         if (user == null) {
-            throw new LoginException("用户名不存在");
+            throw new LoginException("用户不存在");
         }
 
         if (!password.equals(user.getPassword())) {
