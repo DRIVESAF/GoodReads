@@ -12,7 +12,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * @Author ctynt
@@ -20,7 +19,7 @@ import java.io.PrintWriter;
  * @Description
  */
 @WebServlet("/login")
-public class LoginController extends HttpServlet {
+public class LoginServlet extends HttpServlet {
     private UserService userService;
 
     @Override
