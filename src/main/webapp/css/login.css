@@ -75,6 +75,11 @@ body {
     margin: 40px 30px 0 30px;
     letter-spacing: 4px;
 }
+.login-box form a button{
+    border: none;
+    background-color: rgb(0,0,0,0);
+    color: white;
+}
 
 
 .login-box a:hover {
