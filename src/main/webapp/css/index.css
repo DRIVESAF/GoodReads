@@ -1,0 +1,101 @@
+.layout, .layout-row, .layout-column {
+    display: flex;
+}
+
+.layout-row {
+    flex-direction: row;
+}
+
+/*左侧导航栏开始*/
+.site-aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease;
+}
+
+.aside-inner {
+    margin: 0;
+    pointer-events: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.bg-light {
+    background-color: #f4f6fb !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+/*左上角-logo开始*/
+.site-logo {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.25rem 1.25rem;
+}
+a:visited {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    padding: 0;
+    transition-duration: 500ms;
+    max-width: 160px;
+    margin: 0;
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+a {
+    color: #283149;
+    transition: all .3s ease;
+    cursor: pointer;
+    background-color: transparent;
+}
+.logo-light.active, .logo-dark.active {
+    display: block;
+}
+.navbar-brand .logo-large {
+    max-height: 50px;
+}
+.navbar-brand .logo {
+    max-height: 50px;
+}
+a img {
+    border: 0 none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+/*左上角-logo结束*/
+/*左侧导航栏结束*/
+
+
+/*右侧主页*/
+.site-main {
+    margin-left: 220px;
+    position: relative;
+    width: 100%;
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
