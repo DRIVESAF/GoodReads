@@ -34,9 +34,4 @@ public class UserService {
         return user;
     }
 
-    /*注册方法*/
-    public boolean register(User user){
-        SqlSession sqlSession = factory.openSession();
-
-
-    }
+}

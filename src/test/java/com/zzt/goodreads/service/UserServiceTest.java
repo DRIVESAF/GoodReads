@@ -14,7 +14,7 @@ class UserServiceTest {
     private final UserService userService = new UserService();
     @Test
     void login1() {
-        User user = userService.login("111111111111", "ww789");
+        User user = userService.login("1111", "ww789");
         System.out.println(user);
     }
     @Test
