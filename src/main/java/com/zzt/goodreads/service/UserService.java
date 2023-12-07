@@ -1,7 +1,5 @@
 package com.zzt.goodreads.service;
 
-import com.mysql.cj.Session;
-import com.mysql.cj.xdevapi.SessionFactory;
 import com.zzt.goodreads.entity.User;
 import com.zzt.goodreads.mapper.UserMapper;
 import com.zzt.goodreads.service.exception.LoginException;
@@ -46,8 +44,10 @@ public class UserService {
 
         if (u == null){
             //用户名不存在，注册
-
+            mapper.add(u.getPhone(), u.getPassword());
+            sqlSession.commit();
         }
+        sqlSession.close();
         return false;
     }
 }

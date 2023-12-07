@@ -5,5 +5,18 @@
         SELECT *
         FROM user
         WHERE phone = #{value}
+
+
     </select>
+
+    <insert id="insert" parameterType="com.zzt.goodreads.entity.User">
+        INSERT INTO  user(
+            phone,password
+        )VALUES (
+                    #{phone},
+
+                    #{password},
+
+                )
+    </insert>
 </mapper>
