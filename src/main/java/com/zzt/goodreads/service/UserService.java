@@ -3,6 +3,7 @@ package com.zzt.goodreads.service;
 import com.mysql.cj.Session;
 import com.mysql.cj.xdevapi.SessionFactory;
 import com.zzt.goodreads.entity.User;
+import com.zzt.goodreads.mapper.UserMapper;
 import com.zzt.goodreads.service.exception.LoginException;
 import com.zzt.goodreads.utils.MyBatisUtils;
 import com.zzt.goodreads.utils.SqlSessionFactoryUtils;
@@ -33,5 +34,20 @@ public class UserService {
         }
         return user;
     }
+    /*注册方法*/
+    public boolean register(User user){
+        //获取session
+        SqlSession sqlSession = factory.openSession();
+        //获取mapper
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
+        //判断手机号是否已注册
+        User u = mapper.selectByUserPhone(user.getPhone());
+
+        if (u == null){
+            //用户名不存在，注册
+
+        }
+        return false;
+    }
 }
