@@ -2,6 +2,7 @@ package com.zzt.goodreads.service;
 
 import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.entity.User;
+import com.zzt.goodreads.mapper.BookMapper;
 import com.zzt.goodreads.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -17,6 +18,19 @@ public class BookService {
 
     public Book selectByBookName(String bookName){
         SqlSession sqlSession = factory.openSession();
-        return sqlSession.selectOne(bookName);
+        BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+        return mapper.selectByBookName(bookName);
+    }
+
+    public void insert(Book book){
+        SqlSession sqlSession = factory.openSession();
+        BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+        mapper.insert(book);
+    }
+
+    public void delete(String bookName){
+        SqlSession sqlSession = factory.openSession();
+        BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+        mapper.delete(bookName);
     }
 }

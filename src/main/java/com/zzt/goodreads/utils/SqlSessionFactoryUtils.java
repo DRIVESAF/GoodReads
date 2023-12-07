@@ -20,7 +20,7 @@ public class SqlSessionFactoryUtils {
 			//创建sqlSessionFactoryBuilder对象  , 该对象只是用一次，故只需在方法内的变量即可。
 			SqlSessionFactoryBuilder ssfb = new SqlSessionFactoryBuilder();
 			//创建核心配置文件输入流
-			InputStream inputStream = Resources.getResourceAsStream("SqlMapConfig.xml");
+			InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
 			//通过输入流创建SqlSessionFactory对象
 			sqlSessionFactory = ssfb.build(inputStream);
 		}catch(IOException e) {

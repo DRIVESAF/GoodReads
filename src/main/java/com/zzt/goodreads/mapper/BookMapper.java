@@ -1,7 +1,6 @@
 package com.zzt.goodreads.mapper;
 
 import com.zzt.goodreads.entity.Book;
-import com.zzt.goodreads.entity.User;
 
 /**
  * @Author ctynt
@@ -10,5 +9,9 @@ import com.zzt.goodreads.entity.User;
  */
 
 public interface BookMapper {
-   Book selectBookByBookName(String bookName);
+   Book selectByBookName(String bookName);
+
+   void insert(Book book);
+
+   void delete(String bookName);
 }
