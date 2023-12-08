@@ -1,6 +1,7 @@
 .wrapper {
     background-color: #131418;
 }
+
 /*左侧开始*/
 .left {
     margin: 0 auto;
@@ -46,6 +47,7 @@
     border-radius: 10px;
     font-size: 24px;
 }
+
 .aside .list ul li:hover .icon-shouye {
     color: #17BFF7;
 }
@@ -74,7 +76,7 @@
 .aside .list ul li span {
     font-size: 20px;
     padding-right: 5px;
-    color:#717791;
+    color: #717791;
 }
 
 
@@ -84,20 +86,22 @@
 
 
 /*右侧开始*/
-.right{
-    padding:15px 0 15px 210px;
+.right {
+    padding: 15px 0 15px 210px;
 
 }
-.header{
+
+.header {
     display: flex;
 }
-.header .search-box{
+
+.header .search-box {
     float: left;
 }
 
 
 /*搜索框开始*/
-.header .search-box label{
+.header .search-box label {
     width: 820px;
     cursor: pointer;
     background-color: #252831;
@@ -105,14 +109,15 @@
     position: relative;
     display: block;
     border-radius: 8px;
-    color:#717791;
+    color: #717791;
 }
+
 /*.header .search-box label:hover{*/
 /*    transition: background-color .3s ease;*/
 /*    background-color: #444857;*/
 /*}*/
 
-.header .search-box label span{
+.header .search-box label span {
     position: absolute;
     top: 0.4rem;
     left: .6em;
@@ -121,7 +126,8 @@
     font-size: 26px;
     z-index: 1;
 }
-.header .search-box label input{
+
+.header .search-box label input {
     width: 100%;
     margin: 0;
     padding: .4em .4em .4em .6em;
@@ -133,13 +139,15 @@
     background: #252830;
     color: #ffffff;
 }
-.header .search-box label input::placeholder{
-    color:#717791 ;
+
+.header .search-box label input::placeholder {
+    color: #717791;
 }
+
 /*搜索框结束*/
 
 /*header右侧开始*/
-.header .font{
+.header .font {
     width: 45px;
     height: 45px;
     margin-left: 14px;
@@ -150,20 +158,24 @@
     justify-content: center;
     align-items: center;
 }
-.header .font span{
+
+.header .font span {
     text-align: center;
     color: #FFFFFF;
     font-size: 22px;
 }
-.header .font:hover .iconfont{
+
+.header .font:hover .iconfont {
     color: #66C5FF;
-    font-size:26px;
+    font-size: 26px;
     transition: font-size .3s ease;
 }
-.header .shop-cart a{
+
+.header .shop-cart a {
     position: relative;
 }
-.header .shop-cart .cart-number{
+
+.header .shop-cart .cart-number {
     position: absolute;
     width: 12px;
     height: 12px;
@@ -173,22 +185,25 @@
     background-color: red;
     left: 20px;
 }
-.header .info a{
+
+.header .info a {
     position: relative;
 }
-.header .info .info-num{
+
+.header .info .info-num {
     position: absolute;
     width: 6px;
     height: 6px;
     background-color: red;
     border-radius: 50%;
     left: 18px;
-    top:5px;
+    top: 5px;
 }
-.header .font:hover .cart-number{
+
+.header .font:hover .cart-number {
     width: 15px;
     height: 15px;
-    color:#66C5FF;
+    color: #66C5FF;
     border-radius: 50%;
     font-size: 10px;
     font-weight: bolder;
@@ -196,14 +211,195 @@
     left: 24px;
 }
 
-.header .font:hover .info-num{
+.header .font:hover .info-num {
     width: 9px;
     height: 9px;
     background-color: red;
     left: 20px;
-    top:3px;
+    top: 3px;
 }
+
 /*header右侧结束*/
+
+/*main区域开始*/
+
+/*热销书籍开始*/
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 1.0rem;
+}
+
+/*热销书籍标题*/
+x-sign {
+    --interval: 1s;
+    display: block;
+    text-shadow: 0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+
+}
+
+x-sign:nth-of-type(1) {
+    color: azure;
+    --color1: azure;
+    --color2: aqua;
+    --color3: dodgerblue;
+    --color4: blue;
+    font-family: STXingkai, SimSun, STHupo, YouYuan, LiSu, cursive;
+    font-size: 45px;
+}
+
+@keyframes flicker {
+    50% {
+        color: white;
+        filter: saturate(200%) hue-rotate(20deg);
+    }
+}
+
+/*热销书籍卡片边框开始*/
+.hot {
+    padding: 0 1rem;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+    border: 1px solid #2a3cad;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #2a3cad;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 70px;
+    /*float: left;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    width: 220px;
+    height: 220px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 10px;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.box:hover:before {
+    left: -50%;
+    transform: skewX(-5deg);
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.box span:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.box span:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.box span:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+.box span:nth-child(4) {
+    transform: rotate(270deg);
+}
+
+.box span:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #50dfdb;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    50.1% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+.box2{
+    left: 260px;
+}
+.box3{
+    left: 506px;
+}
+.box4{
+    left: 748px;
+}
+/*热销书籍卡片边框结束*/
+
+/*卡牌详情开始*/
+.box .content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #f0a591;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
+}
+
+.content h2 {
+    font-size: 19px;
+}
+.content p {
+    padding-top: 5px;
+    font-size: 12px;
+    color: #717791;
+}
+
+/*卡片详情结束*/
+/*main区域结束*/
 
 
 
