@@ -42,11 +42,10 @@
 
 .aside .list ul li:hover {
     background-color: #131418;
-    transition: font-size 0.5s ease;
+    transition: font-size 0.3s ease;
     border-radius: 10px;
-
+    font-size: 24px;
 }
-
 .aside .list ul li:hover .icon-shouye {
     color: #17BFF7;
 }
@@ -75,19 +74,94 @@
 .aside .list ul li span {
     font-size: 20px;
     padding-right: 5px;
+    color:#717791;
 }
 
-.aside .list ul li:hover {
-    font-size: 24px;
-}
+
 /*左侧导航栏结束*/
 
 /*左侧结束*/
 
 
 /*右侧开始*/
-/*.right{*/
-/*    padding: ;*/
+.right{
+    padding:15px 0 15px 210px;
+
+}
+.header{
+    display: flex;
+}
+.header .search-box{
+    float: left;
+}
+
+
+/*搜索框开始*/
+.header .search-box label{
+    width: 820px;
+    cursor: pointer;
+    background-color: #252831;
+    font-size: 1.2rem;
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    color:#717791;
+}
+/*.header .search-box label:hover{*/
+/*    transition: background-color .3s ease;*/
+/*    background-color: #444857;*/
 /*}*/
+
+.header .search-box label span{
+    position: absolute;
+    top: 0.4rem;
+    left: .6em;
+    bottom: 0;
+    margin: auto auto auto 0;
+    font-size: 26px;
+    z-index: 1;
+}
+.header .search-box label input{
+    width: 100%;
+    margin: 0;
+    padding: .4em .4em .4em .6em;
+    text-indent: 2em;
+    border: 0;
+    border-radius: 4px;
+    font: inherit;
+    font-weight: 600;
+    background: #252830;
+    color: #ffffff;
+}
+.header .search-box label input::placeholder{
+    color:#717791 ;
+}
+/*搜索框结束*/
+
+/*header右侧开始*/
+.header .font{
+    width: 45px;
+    height: 45px;
+    margin-left: 14px;
+    background-color: #444857;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .font span{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.header .font:hover span{
+    color: #66C5FF;
+    font-size:26px;
+    transition: font-size .3s ease;
+}
+git
+/*header右侧结束*/
+
 
 

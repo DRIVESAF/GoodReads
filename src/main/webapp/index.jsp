@@ -5,7 +5,6 @@
 <head>
     <title>猫猫阅读</title>
     <link rel="icon" href="images/favicon-new.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="./font1/iconfont.css">
     <style>
         @import url("./css/home.css");
     </style>
@@ -18,7 +17,7 @@
 <div>
     <div class="left">
         <div class="aside">
-<%--            logo--%>
+            <%--            logo--%>
             <a href="http://localhost:8080/index.jsp" class="logo">
                 <img src="./images/GoodReads.png" alt="">
                 <span>入书香之地，摘智慧之果</span>
@@ -53,12 +52,47 @@
                     </li>
                 </ul>
             </div>
-<%--            左侧导航栏结束--%>
+            <%--            左侧导航栏结束--%>
         </div>
     </div>
     <div class="right">
-        <div class="header">header</div>
+        <%--        header区域开始--%>
+        <div class="header">
+            <%--            搜索框--%>
+            <div class="search-box">
+                <form action="">
+                    <label>
+                        <span class="iconfont icon-sousuo"></span>
+                        <input type="search" placeholder="搜索GoodReads...">
+                    </label>
+                </form>
+            </div>
+            <%--header右侧--%>
+            <div class="font shop-cart">
+                <a href="#">
+                    <span class="iconfont icon-gouwuche"></span>
+                </a>
+            </div>
+
+            <div class="font info">
+                <a href="#">
+                    <span class="iconfont icon-xiaoxi "></span>
+                </a>
+            </div>
+            <%--    个人中心--%>
+            <div class="font personal">
+                <a href="#">
+                    <span class="iconfont icon-shengdangerenzhongxin "></span>
+                </a>
+            </div>
+        </div>
+
+
+        <%--    header区域结束--%>
+
+        <%--    main区域开始--%>
         <div class="main">main</div>
+        <%--        main区域结束--%>
     </div>
 </div>
 
