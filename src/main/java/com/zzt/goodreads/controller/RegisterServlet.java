@@ -33,11 +33,17 @@ public class RegisterServlet extends HttpServlet {
         //接收用户输入，前端用表单键值对的形式传参
         String phone = request.getParameter("phone");
         String password = request.getParameter("password");
+        String userName = request.getParameter("userName");
+        String email = request.getParameter("email");
+        User user = new User();
+        user.setPhone(phone);
+        user.setPassword(password);
+        user.setUserName(userName);
+        user.setEmail(email);
         //调用业务逻辑
         ResponseUtils resp;
         try {
-            User user = userService.login(phone,password);
-            System.out.println(user);
+            userService.register(user);
             // 响应结果, "0" 代表处理成功,非 "0"代表处理失败
             resp = new ResponseUtils().put("user", user);
             HttpSession session = request.getSession();
