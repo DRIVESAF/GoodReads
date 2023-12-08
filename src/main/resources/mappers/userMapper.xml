@@ -9,14 +9,9 @@
 
     </select>
 
-    <insert id="insert" parameterType="com.zzt.goodreads.entity.User">
-        INSERT INTO  user(
-            phone,password
-        )VALUES (
-                    #{phone},
-
-                    #{password},
-
-                )
+    <insert id="add" parameterType="com.zzt.goodreads.entity.User">
+        INSERT
+        INTO  `user`(user_name,phone,password,email)
+        VALUES (#{userName},#{phone}, #{password},#{email})
     </insert>
 </mapper>

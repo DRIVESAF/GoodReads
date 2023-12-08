@@ -11,5 +11,5 @@ import com.zzt.goodreads.entity.User;
 public interface UserMapper {
     User selectByUserPhone(String phone);
 
-    User add(String phone,String password);
+    void add(User user);
 }

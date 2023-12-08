@@ -25,6 +25,7 @@ class BookServiceTest {
         book.setBookName("偏见的本质");
         book.setBookType("心理");
         bookService.insert(book);
+
     }
 
     @Test

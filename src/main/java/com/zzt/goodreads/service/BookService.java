@@ -3,6 +3,7 @@ package com.zzt.goodreads.service;
 import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.entity.User;
 import com.zzt.goodreads.mapper.BookMapper;
+import com.zzt.goodreads.utils.MyBatisUtils;
 import com.zzt.goodreads.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -17,20 +18,26 @@ public class BookService {
     SqlSessionFactory factory = SqlSessionFactoryUtils.getSqlSessionFactory();
 
     public Book selectByBookName(String bookName){
-        SqlSession sqlSession = factory.openSession();
-        BookMapper mapper = sqlSession.getMapper(BookMapper.class);
-        return mapper.selectByBookName(bookName);
+        return (Book)MyBatisUtils.executeQuery(sqlSession -> {
+            BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+            return mapper. selectByBookName(bookName);
+
+        });
     }
 
     public void insert(Book book){
-        SqlSession sqlSession = factory.openSession();
-        BookMapper mapper = sqlSession.getMapper(BookMapper.class);
-        mapper.insert(book);
+         MyBatisUtils.executeUpdate(sqlSession -> {
+             BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+             mapper.insert(book);
+             return book;
+         });
     }
 
     public void delete(String bookName){
-        SqlSession sqlSession = factory.openSession();
-        BookMapper mapper = sqlSession.getMapper(BookMapper.class);
-        mapper.delete(bookName);
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+            mapper.delete(bookName);
+            return bookName;
+        });
     }
 }
