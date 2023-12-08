@@ -1,4 +1,5 @@
 <%@ page import="com.zzt.goodreads.entity.User" %>
+<%@ page import="com.zzt.goodreads.entity.Order" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
@@ -13,6 +14,10 @@
 <%
     User user = (User) request.getSession().getAttribute("user");
     request.setAttribute("user", user);
+%>
+<%
+    Order order = (Order) request.getSession().getAttribute("order");
+    request.setAttribute("order", order);
 %>
 <div>
     <div class="left">
@@ -71,12 +76,14 @@
             <div class="font shop-cart">
                 <a href="#">
                     <span class="iconfont icon-gouwuche"></span>
+                    <span class="cart-number">1${order.orderAmount}</span>
                 </a>
             </div>
 
             <div class="font info">
                 <a href="#">
-                    <span class="iconfont icon-xiaoxi "></span>
+                    <span class="iconfont icon-xiaoxi"></span>
+                    <span class="info-num"></span>
                 </a>
             </div>
             <%--    个人中心--%>

@@ -155,13 +155,56 @@
     color: #FFFFFF;
     font-size: 22px;
 }
-.header .font:hover span{
+.header .font:hover .iconfont{
     color: #66C5FF;
     font-size:26px;
     transition: font-size .3s ease;
 }
-git
+.header .shop-cart a{
+    position: relative;
+}
+.header .shop-cart .cart-number{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 8px;
+    background-color: red;
+    left: 20px;
+}
+.header .info a{
+    position: relative;
+}
+.header .info .info-num{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    left: 18px;
+    top:5px;
+}
+.header .font:hover .cart-number{
+    width: 15px;
+    height: 15px;
+    color:#66C5FF;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bolder;
+    background-color: red;
+    left: 24px;
+}
+
+.header .font:hover .info-num{
+    width: 9px;
+    height: 9px;
+    background-color: red;
+    left: 20px;
+    top:3px;
+}
 /*header右侧结束*/
+
 
 
 
