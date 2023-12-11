@@ -19,9 +19,6 @@ import org.apache.ibatis.session.SqlSessionFactory;
 
 
 public class UserService {
-    SqlSessionFactory factory = SqlSessionFactoryUtils.getSqlSessionFactory();
-
-    private final User user = new User();
 
     /*登录方法*/
     public User login(String phone, String password) {
@@ -37,17 +34,13 @@ public class UserService {
     }
     /*注册方法*/
     public void register(User user){
-
         String phone = user.getPhone();
-        String password = user.getPassword();
-        String userName = user.getUserName();
-        String email = user.getEmail();
 
         User user1 = new User();
-        user1.setPhone(phone);
-        user1.setPassword(password);
-        user1.setUserName(userName);
-        user1.setEmail(email);
+        user1.setPhone(user.getPhone());
+        user1.setPassword(user.getPassword());
+        user1.setUserName(user.getUserName());
+        user1.setEmail(user.getEmail());
 
         //判断手机号是否已注册
         user = (User) MyBatisUtils.executeQuery(sqlSession -> sqlSession.<User>selectOne("com.zzt.goodreads.mapper.UserMapper.selectByUserPhone", phone));

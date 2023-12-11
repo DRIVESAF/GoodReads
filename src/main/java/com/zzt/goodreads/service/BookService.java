@@ -15,7 +15,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  */
 
 public class BookService {
-    SqlSessionFactory factory = SqlSessionFactoryUtils.getSqlSessionFactory();
+
 
     public Book selectByBookName(String bookName){
         return (Book)MyBatisUtils.executeQuery(sqlSession -> {
