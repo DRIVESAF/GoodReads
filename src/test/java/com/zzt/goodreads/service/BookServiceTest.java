@@ -27,10 +27,11 @@ class BookServiceTest {
         List<Book> books = bookService.selectAll();
         System.out.println(books);
     }
+
+
     @Test
     void insert(){
-        book.setBookName("偏见的本质");
-        book.setBookType("心理");
+        Book book = new Book(10,"2","2",1,1,"2","3",1,1,1,"22");
         bookService.insert(book);
 
     }
