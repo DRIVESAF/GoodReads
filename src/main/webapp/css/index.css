@@ -385,10 +385,16 @@
     bottom: 10px;
     right: 10px;
 }
-.back-top img {
+.back-top .top {
     width: 45px;
     height: 45px;
 }
+
+/*.back-top .tip {*/
+/*    width: 130px;*/
+/*    height: 40px;*/
+/*}*/
+
 
 
 
