@@ -190,8 +190,9 @@
 
 <%--    回到顶部--%>
     <div class="back-top">
+<%--        <img class="tip" src="./images/回到顶部文字.png">--%>
         <a href="index.jsp#top">
-            <img src="./images/回到顶部2.png" alt="回到顶部">
+            <img class="top" src="./images/回到顶部2.png" alt="回到顶部">
         </a>
     </div>
 </div>
