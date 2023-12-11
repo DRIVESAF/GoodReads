@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzt.goodreads.mapper.BookSortMapper">
+
+
+    <resultMap id="selectByBookSortMap" type="com.zzt.goodreads.entity.BookSort">
+        <result column="name" property="bookType"/>
+    </resultMap>
+
+    <select id="selectByBookSortName" parameterType="String" resultType="com.zzt.goodreads.entity.BookSort" resultMap="selectByBookSortMap">
+        SELECT *
+        FROM book_sort
+        WHERE name= #{value}
+    </select>
+
+    <insert id="insert" parameterType="com.zzt.goodreads.entity.BookSort">
+        INSERT
+        INTO `book_sort`(sort_id,name)
+        VALUES (#{sortId},#{bookType})
+    </insert>
+
+    <update id="delete" parameterType="String">
+        DELETE
+        FROM book_sort
+        WHERE name = #{value}
+    </update>
+
+
+</mapper>
