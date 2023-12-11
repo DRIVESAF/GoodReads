@@ -1,6 +1,5 @@
 package com.zzt.goodreads.controller;
 
-import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.service.BookService;
 import com.zzt.goodreads.utils.ResponseUtils;
 import jakarta.servlet.ServletException;
@@ -11,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.util.List;
+
 
 /**
  * @Description BookServlet
@@ -23,6 +22,7 @@ import java.util.List;
 public class BookServlet extends HttpServlet {
 
     private BookService bookService = new BookService();
+
 
     public BookServlet() {
         log.info("init");
@@ -51,10 +51,10 @@ public class BookServlet extends HttpServlet {
 
     private void selectList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ResponseUtils responseUtils;
-        List<Book> books = bookService.selectAll();
-        responseUtils = new ResponseUtils().put("list", books);
+//        List<Book> books = bookService.selectAll();
+//        responseUtils = new ResponseUtils().put("list", books);
         resp.setContentType("application/json;charset=UTF-8");
-        resp.getWriter().println(responseUtils.toJsonString());
+//        resp.getWriter().println(responseUtils.toJsonString());
 //        resp.addHeader("Accept-Ranges","bytes");
     }
 

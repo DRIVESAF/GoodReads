@@ -1,8 +1,8 @@
 <%@ page import="com.zzt.goodreads.entity.User" %>
 <%@ page import="com.zzt.goodreads.entity.Order" %>
-<%@ page import="com.zzt.goodreads.service.BookService" %>
 <%@ page import="com.zzt.goodreads.entity.Book" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.zzt.goodreads.service.BookService" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
@@ -24,7 +24,6 @@
     Order order = (Order) request.getSession().getAttribute("order");
     request.setAttribute("order", order);
 
-    BookService bookService = new BookService();
 %>
 <div>
     <div class="left">
@@ -43,7 +42,9 @@
                     </li>
                     <li>
                         <span class="iconfont icon-rexiao"></span>
-                        <a href="#">热销书籍</a>
+                        <a href="#">
+                            热销书籍
+                        </a>
                     </li>
                     <li>
                         <span class="iconfont icon-fenlei"></span>
@@ -106,61 +107,45 @@
         <div class="main">
             <%--            热销书籍--%>
 
-            <%List<Book> books = bookService.selectAll();
+            <%
+                BookService bookService = new BookService();
+                List<Book> books = bookService.selectAll();
               request.setAttribute("books",books);
             %>>
+                <a href="#">
+                    <img class="hot-books" src="./images/热销书籍.png" alt="热销书籍">
+                </a>
             <div class="hot">
+
                 <x-sign>
                     <small>热销书籍</small>
                 </x-sign>
                 <c:forEach items ="${books}" var="book">
                     <div class="box">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+
                         <div class="content">
                             <h2>${book.bookName}</h2>
                             <p class="ellipsis2" ><a>${book.bookIntro}</a></p>
                         </div>
                     </div>
+                    <div class="hot-card">
+                        <div class="hot-box ">
+                            <img src="./images/cover/${book.bookName}.webp" alt="${book.bookName}">
+                            <div class="content">
+                                <h2>${book.bookName}</h2>
+                                <p class="ellipsis2"><a>${book.bookIntro}</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
                 </c:forEach>
 
-<%--                <div class="box box2">--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <div class="content">--%>
-<%--                        <h2>《霍乱时期的爱情》</h2>--%>
-<%--                        <p class="ellipsis2"><a>《霍乱时期的爱情》是加西亚•马尔克斯获得诺贝尔文学奖之后完成的第一部小说。讲述了一段跨越半个多世纪的爱情史诗，穷尽了所有爱情的可能性：忠贞的、隐秘的、粗暴的、羞怯的、柏拉图式的、放荡的、转瞬即逝的、生死相依的……再现了时光的无情流逝，被誉为“人类有史以来最伟大的爱情小说”，是20世纪最重要的经典文学巨著之一。</a></p>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--                <div class="box box3">--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <div class="content">--%>
-<%--                        <h2>《活着》</h2>--%>
-<%--                        <p class="ellipsis2"><a>《活着(新版)》讲述了农村人福贵悲惨的人生遭遇。福贵本是个阔少爷，可他嗜赌如命，终于赌光了家业，一贫如洗。他的父亲被他活活气死，母亲则在穷困中患了重病，福贵前去求药，却在途中被国民党抓去当壮丁。经过几番波折回到家里，才知道母亲早已去世，妻子家珍含辛茹苦地养大两个儿女。此后更加悲惨的命运一次又一次降临到福贵身上，他的妻子、儿女和孙子相继死去，最后只剩福贵和一头老牛相依为命，但老人依旧活着，仿佛比往日更加洒脱与坚强。</a></p>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--                <div class="box box4">--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <span></span>--%>
-<%--                    <div class="content">--%>
-<%--                        <h2>《梦的解析》</h2>--%>
-<%--                        <p class="ellipsis2"><a>弗洛伊德首先回顾了此前关于分析梦的科学著作，他认为虽然有趣但是不够充分。然后他记述了许多梦，来阐明他的理论。他的方法开始于分析他的梦“伊尔玛打针”，但也有许多来自病人的个案研究，书中引用的许多最重要的梦都来自他人。--%>
-<%--                            弗洛伊德进行分析的许多来源来自文学作品，该书更多的是一次文学分析的自觉尝试，超过心理学研究的成分。弗洛伊德在此首次讨论了后来发展的恋母情结理论，也就是俄狄浦斯情结。--%>
-<%--                            书中作者声称他发现了三大真理：梦是无意识欲望和儿时欲望的伪装的满足；俄狄浦斯情结是人类普通的心理情绪；儿童是有性爱意识和动机的。</a></p>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
             </div>
+
         </div>
     </div>
+</div>
 </div>
 
 
