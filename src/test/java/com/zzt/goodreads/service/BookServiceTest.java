@@ -3,6 +3,7 @@ package com.zzt.goodreads.service;
 import com.zzt.goodreads.entity.Book;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
 
 
 /**
@@ -19,6 +20,12 @@ class BookServiceTest {
     void selectByBookName() {
         book = bookService.selectByBookName("教父");
         System.out.println(book);
+    }
+
+    @Test
+    void selectAll(){
+        List<Book> books = bookService.selectAll();
+        System.out.println(books);
     }
     @Test
     void insert(){

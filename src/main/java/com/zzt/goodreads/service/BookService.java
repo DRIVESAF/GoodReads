@@ -8,6 +8,7 @@ import com.zzt.goodreads.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,8 +18,6 @@ import java.util.List;
  */
 
 public class BookService {
-
-
     public Book selectByBookName(String bookName){
         return (Book)MyBatisUtils.executeQuery(sqlSession -> {
             BookMapper mapper = sqlSession.getMapper(BookMapper.class);
@@ -26,6 +25,18 @@ public class BookService {
 
         });
     }
+
+    public List<Book> selectAll(){
+
+        return (List<Book>) MyBatisUtils.executeQuery(sqlSession -> {
+            BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+            return mapper.selectAll();
+
+        });
+
+
+    }
+
 
     public void insert(Book book){
          MyBatisUtils.executeUpdate(sqlSession -> {
