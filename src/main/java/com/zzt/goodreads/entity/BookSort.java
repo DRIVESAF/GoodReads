@@ -15,6 +15,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class BookSort {
-    private Integer bookId;
+    private Integer sortId;
     private String bookType;
 }
