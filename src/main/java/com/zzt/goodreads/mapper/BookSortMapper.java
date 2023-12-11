@@ -16,5 +16,6 @@ public interface BookSortMapper {
     void deleteByBookType(String bookType);
 
     void deleteBySortId(Integer sortId);
+    <List> BookSort selectAll();
 
 }

@@ -226,8 +226,6 @@
 /*header右侧结束*/
 
 /*main区域开始*/
-
-/*热销书籍开始*/
 .main {
     width: 100%;
     max-width: 1200px;
@@ -235,9 +233,11 @@
     /*position: relative;*/
     padding: 0 1.0rem;
 }
+
+/*热销书籍开始*/
 .hot{
     margin-top: 20px;
-    height: 650px;
+    height: 640px;
 }
 .hot .hot-books{
     width: 150px;
@@ -300,8 +300,83 @@
     padding: 4px;
     margin-right: 2px;
 }
+/*热销书籍结束*/
+
+/*书籍分类开始*/
+.classify{
+    height: 600px;
+    margin-top: 20px;
+}
+
+.books-classify{
+    width: 150px;
+    height: 50px;
+}
+.classify-card{
+    padding: 0 0 0 10px;
+}
+.classify-box{
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+    margin: 20px 36px 0 0 ;
+}
+.classify-box:hover {
+    opacity: 0.8;
+}
+
+.classify-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.classify-content .classify-add{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 3px;
+    color: #10c469;
+    background-color: rgba(16, 196, 105, .18)
+}
+.classify-title{
+    width: 100%;
+    font-size: 16px;
+    color: #eaebf4;
+    line-height: 26px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.classify-title::after{
+    content: "";
+    background: #ffffff;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+}
 
 
+
+
+/*书籍分类结束*/
 /*main区域结束*/
 
 

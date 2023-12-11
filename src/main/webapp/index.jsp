@@ -1,8 +1,8 @@
-<%@ page import="com.zzt.goodreads.entity.User" %>
-<%@ page import="com.zzt.goodreads.entity.Order" %>
-<%@ page import="com.zzt.goodreads.entity.Book" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.zzt.goodreads.service.BookService" %>
+<%@ page import="com.zzt.goodreads.service.BookSortService" %>
+<%@ page import="com.zzt.goodreads.entity.*" %>
+<%@ page import="com.zzt.goodreads.service.ClassifyService" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
@@ -25,7 +25,7 @@
     request.setAttribute("order", order);
 
 %>
-<div>
+<div id="top">
     <div class="left">
         <div class="aside">
             <%--            logo--%>
@@ -113,6 +113,10 @@
                 BookService bookService = new BookService();
                 List<Book> books = bookService.selectAll();
                 request.setAttribute("books", books);
+//
+                ClassifyService classifyService = new ClassifyService();
+                List<Classify> classifies = classifyService.selectAll();
+                request.setAttribute("classifies", classifies);
             %>
             <%--            热销书籍开始--%>
             <div class="hot" id="hot">
@@ -141,44 +145,39 @@
                     </c:forEach>
                 </div>
             </div>
-<%--            热销书籍结束--%>
+            <%--            热销书籍结束--%>
 
-<%--            书籍分类开始--%>
+
+            <%--            书籍分类开始--%>
             <div class="classify" id="classify">
                 <a href="#">
-                    <img class="hot-books" src="./images/书籍分类.png" alt="书籍分类">
+                    <img class="books-classify" src="./images/书籍分类.png" alt="书籍分类">
                 </a>
-                <div class="hot-card">
-                    <c:forEach items="${books}" var="book">
-                        <div class="hot-box ">
-<%--                            <span></span>--%>
-                            <img src="./images/cover/${book.bookCover}" alt="${book.bookName}">
-                            <div class="content">
-                                <div class="content-left">
-                                    <h2>《${book.bookName}》</h2>
-                                    <h3>${book.author}</h3>
+                <div class="classify-card">
+                    <c:forEach items="${classifies}}" var="classify">
+                        <div class="classify-box" style="background-image: url('./images/classify/${classify.classifyCover}');">
+                            <a href="#">
+                                <div class="classify-content">
+                                    <div class="classify-content">
+                                        <span class="classify-add">${classify.content}</span>
+                                        <h3 class="classify-title">${classify.className}</h3>
+                                    </div>
                                 </div>
-                                <div class="content-right">
-                                    <span class="iconfont icon-gengduo"></span>
-                                </div>
-                            </div>
-                            <div class="content-bottom">
-                                <span class="iconfont icon-guanzhu">&nbsp;${book.collect}</span>
-                                <span class="iconfont icon-shuping">&nbsp;${book.comment}</span>
-                                <span class="iconfont icon-liulanliang">&nbsp;${book.browse}</span>
-                            </div>
+                            </a>
                         </div>
                     </c:forEach>
                 </div>
             </div>
-<%--            书籍分类结束--%>
-
+            <%--            书籍分类结束--%>
         </div>
+        <%--        main区域结束--%>
     </div>
 
-
-    <%--        main区域结束--%>
-
+<%--    回到顶部--%>
+    <div class="back-top">
+        span
+    </div>
+</div>
 </body>
 
 </html>

@@ -17,6 +17,10 @@
         <bind name="name" value="'%' + name + '%'"/>
         select * from book_sort where name like #{name}
     </select>
+    <select id="selectAll" resultType="com.zzt.goodreads.entity.BookSort">
+            SELECT *
+            FROM book_sort
+    </select>
 
 
     <insert id="insert" parameterType="com.zzt.goodreads.entity.BookSort">

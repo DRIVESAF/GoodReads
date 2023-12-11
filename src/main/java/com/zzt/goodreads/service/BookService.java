@@ -31,10 +31,7 @@ public class BookService {
         return (List<Book>) MyBatisUtils.executeQuery(sqlSession -> {
             BookMapper mapper = sqlSession.getMapper(BookMapper.class);
             return mapper.selectAll();
-
         });
-
-
     }
 
 
