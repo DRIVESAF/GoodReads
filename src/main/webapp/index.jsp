@@ -118,20 +118,20 @@
                 <div class="hot-card">
                                         <c:forEach items="${books}" var="book">
                     <div class="hot-box ">
-                        <img src="./images/cover/${book.bookName}.webp" alt="${book.bookName}">
+                        <img src="./images/cover/${book.bookCover}" alt="${book.bookName}">
                         <div class="content">
                             <div class="content-left">
                                 <h2>《${book.bookName}》</h2>
-                                <h3>马里奥·普佐(美)</h3>
+                                <h3>${book.author}</h3>
                             </div>
                             <div class="content-right">
                                 <span class="iconfont icon-gengduo"></span>
                             </div>
                         </div>
                         <div class="content-bottom">
-                            <span class="iconfont icon-guanzhu">&nbsp;5,188</span>
-                            <span class="iconfont icon-shuping">&nbsp;99</span>
-                            <span class="iconfont icon-liulanliang">&nbsp;98,720</span>
+                            <span class="iconfont icon-guanzhu">&nbsp;${book.collect}</span>
+                            <span class="iconfont icon-shuping">&nbsp;${book.comment}</span>
+                            <span class="iconfont icon-liulanliang">&nbsp;${book.browse}</span>
                         </div>
                     </div>
                                         </c:forEach>

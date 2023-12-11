@@ -20,7 +20,12 @@ public class Book {
     private String bookName;
     private Integer bookPrice;
     private String imageAddress;
-    private Integer bookStore;
+    private Integer bookStork;
     private String bookIntro;
+    private String bookCover;
+    private int collect;
+    private int browse;
+    private int comment;
+    private String author;
 
 }
