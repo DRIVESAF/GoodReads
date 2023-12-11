@@ -1,9 +1,6 @@
-package com.zzt.goodreads.service;
 
-import com.zzt.goodreads.entity.Book;
+package com.zzt.goodreads.service;
 import com.zzt.goodreads.entity.BookSort;
-import com.zzt.goodreads.entity.User;
-import com.zzt.goodreads.mapper.BookMapper;
 import com.zzt.goodreads.mapper.BookSortMapper;
 import com.zzt.goodreads.utils.MyBatisUtils;
 
@@ -12,30 +9,37 @@ import com.zzt.goodreads.utils.MyBatisUtils;
  * @Date 2023/12/11
  * @Description
  */
-
 public class BookSortService {
-    public BookSort selectBySortName(String bookType){
-//        return (BookSort) MyBatisUtils.executeQuery(sqlSession -> {
-//            BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
-//            return mapper.selectBySortName(bookType);
-//        });
-        BookSort bookSort = (BookSort) MyBatisUtils.executeQuery(sqlSession -> sqlSession.<User>selectOne("com.zzt.goodreads.mapper.BookSortMapper.selectBySortName",bookType));
-        return bookSort;
-    }
-
-    public void insert(BookSort sort){
-        MyBatisUtils.executeUpdate(sqlSession -> {
+    public BookSort selectByBookSortName(String bookType){
+        return (BookSort) MyBatisUtils.executeQuery(sqlSession -> {
             BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
-            mapper.insert(sort);
-            return sort;
+            return mapper. selectByBookSortName(bookType);
+
         });
     }
 
-    public void delete(String bookType){
+    public void insert(BookSort bookSort){
         MyBatisUtils.executeUpdate(sqlSession -> {
             BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
-            mapper.delete(bookType);
+            mapper.insert(bookSort);
+            return bookSort;
+        });
+    }
+
+    public void deleteByBookType(String bookType){
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
+            mapper.deleteByBookType(bookType);
             return bookType;
         });
     }
+
+    public void deleteBySortId(Integer sortId){
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
+            mapper.deleteBySortId(sortId);
+            return  sortId;
+        });
+    }
 }
+
