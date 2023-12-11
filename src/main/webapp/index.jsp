@@ -1,10 +1,11 @@
 <%@ page import="com.zzt.goodreads.entity.User" %>
 <%@ page import="com.zzt.goodreads.entity.Order" %>
-<%@ page import="com.zzt.goodreads.service.BookService" %>
-<%--<%@ page import="com.zzt.goodreads.service.impl.BookServiceImpl" %>--%>
 <%@ page import="com.zzt.goodreads.entity.Book" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.zzt.goodreads.service.BookService" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,9 +24,6 @@
     Order order = (Order) request.getSession().getAttribute("order");
     request.setAttribute("order", order);
 
-//    BookService bookService = new BookServiceImpl();
-//    List<Book> books = bookService.selectAll();
-//    request.setAttribute("books", books);
 %>
 <div>
     <div class="left">
@@ -108,16 +106,22 @@
         <%--    main区域开始--%>
         <div class="main">
             <%--            热销书籍--%>
+            <%
+                BookService bookService = new BookService();
+                List<Book> books = bookService.selectAll();
+                request.setAttribute("books", books);
+            %>
             <div class="hot">
                 <a href="#">
                     <img class="hot-books" src="./images/热销书籍.png" alt="热销书籍">
                 </a>
                 <div class="hot-card">
+                                        <c:forEach items="${books}" var="book">
                     <div class="hot-box ">
-                        <img src="./images/cover/教父.webp" alt="教父">
+                        <img src="./images/cover/${book.bookName}.webp" alt="${book.bookName}">
                         <div class="content">
                             <div class="content-left">
-                                <h2>《教父》</h2>
+                                <h2>《${book.bookName}》</h2>
                                 <h3>马里奥·普佐(美)</h3>
                             </div>
                             <div class="content-right">
@@ -129,53 +133,15 @@
                             <span class="iconfont icon-shuping">&nbsp;99</span>
                             <span class="iconfont icon-liulanliang">&nbsp;98,720</span>
                         </div>
-
                     </div>
-                    <div class="hot-box ">
-                        <img src="./images/cover/霍乱时期的爱情.webp" alt="霍乱时期的爱情">
-                        <div class="content">
-                            <div class="content-left">
-                                <h2>《霍乱时期的爱情》</h2>
-                                <h3>加西亚·马尔克斯(哥伦比亚)</h3>
-                            </div>
-                            <div class="content-right">
-                                <span class="iconfont icon-gengduo"></span>
-                            </div>
-                        </div>
-                        <div class="content-bottom">
-                            <span class="iconfont icon-guanzhu">&nbsp;5,188</span>
-                            <span class="iconfont icon-shuping">&nbsp;99</span>
-                            <span class="iconfont icon-liulanliang">&nbsp;98,720</span>
-                        </div>
-                    </div>
-                    <div class="hot-box">
-                        <img src="./images/cover/活着.webp" alt="活着">
-                        <div class="content">
-                            <div class="content-left">
-                                <h2>《活着》</h2>
-                                <h3>余华(中)</h3>
-                            </div>
-                            <div class="content-right">
-                                <span class="iconfont icon-gengduo"></span>
-                            </div>
-                        </div>
-                        <div class="content-bottom">
-                            <span class="iconfont icon-guanzhu">&nbsp;5,188</span>
-                            <span class="iconfont icon-shuping">&nbsp;99</span>
-                            <span class="iconfont icon-liulanliang">&nbsp;98,720</span>
-                        </div>
-                    </div>
+                                        </c:forEach>
                 </div>
-
             </div>
-
         </div>
     </div>
-</div>
-</div>
 
 
-<%--        main区域结束--%>
+    <%--        main区域结束--%>
 
 </body>
 

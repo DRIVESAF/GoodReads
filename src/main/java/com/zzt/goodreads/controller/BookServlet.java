@@ -1,8 +1,6 @@
 package com.zzt.goodreads.controller;
 
-import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.service.BookService;
-//import com.zzt.goodreads.service.impl.BookServiceImpl;
 import com.zzt.goodreads.utils.ResponseUtils;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.util.List;
+
 
 /**
  * @Description BookServlet
@@ -22,7 +20,9 @@ import java.util.List;
 @WebServlet("/book/*")
 @Slf4j
 public class BookServlet extends HttpServlet {
-//    private final BookService bookService = new BookServiceImpl();
+
+    private BookService bookService = new BookService();
+
 
     public BookServlet() {
         log.info("init");

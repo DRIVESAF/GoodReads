@@ -13,8 +13,10 @@ import java.util.List;
 public interface BookMapper {
    Book selectByBookName(String bookName);
 
+   List<Book> selectAll();
+
    void insert(Book book);
 
    void delete(String bookName);
-   List<Book> selectAll();
+
 }

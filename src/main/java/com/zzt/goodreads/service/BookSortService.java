@@ -1,21 +1,15 @@
-package com.zzt.goodreads.service;
 
-import com.zzt.goodreads.entity.Book;
+package com.zzt.goodreads.service;
 import com.zzt.goodreads.entity.BookSort;
-import com.zzt.goodreads.mapper.BookMapper;
 import com.zzt.goodreads.mapper.BookSortMapper;
 import com.zzt.goodreads.utils.MyBatisUtils;
-import com.zzt.goodreads.utils.SqlSessionFactoryUtils;
-import org.apache.ibatis.session.SqlSessionFactory;
 
 /**
- * @author: DRIVESAF
- * @createTime: 2023/12/11 8:28
- * @description:
- **/
+ * @Author ctynt
+ * @Date 2023/12/11
+ * @Description
+ */
 public class BookSortService {
-
-
     public BookSort selectByBookSortName(String bookType){
         return (BookSort) MyBatisUtils.executeQuery(sqlSession -> {
             BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
@@ -32,11 +26,20 @@ public class BookSortService {
         });
     }
 
-    public void delete(String bookType){
+    public void deleteByBookType(String bookType){
         MyBatisUtils.executeUpdate(sqlSession -> {
             BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
-            mapper.delete(bookType);
+            mapper.deleteByBookType(bookType);
             return bookType;
         });
     }
+
+    public void deleteBySortId(Integer sortId){
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            BookSortMapper mapper = sqlSession.getMapper(BookSortMapper.class);
+            mapper.deleteBySortId(sortId);
+            return  sortId;
+        });
+    }
 }
+

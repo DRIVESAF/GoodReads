@@ -7,23 +7,34 @@
         <result column="name" property="bookType"/>
     </resultMap>
 
+<!--    <select id="selectByBookSortName" parameterType="String" resultType="com.zzt.goodreads.entity.BookSort" resultMap="selectByBookSortMap">-->
+<!--        SELECT *-->
+<!--        FROM book_sort-->
+<!--        WHERE name= #{value}-->
+<!--    </select>-->
+
     <select id="selectByBookSortName" parameterType="String" resultType="com.zzt.goodreads.entity.BookSort" resultMap="selectByBookSortMap">
-        SELECT *
-        FROM book_sort
-        WHERE name= #{value}
+        <bind name="name" value="'%' + name + '%'"/>
+        select * from book_sort where name like #{name}
     </select>
+
 
     <insert id="insert" parameterType="com.zzt.goodreads.entity.BookSort">
         INSERT
-        INTO `book_sort`(sort_id,name)
-        VALUES (#{sortId},#{bookType})
+        INTO `book_sort`(name)
+        VALUES (#{bookType})
     </insert>
 
-    <update id="delete" parameterType="String">
+    <update id="deleteByBookType" parameterType="String">
         DELETE
         FROM book_sort
         WHERE name = #{value}
     </update>
 
+    <update id="deleteBySortId" parameterType="Integer">
+        DELETE
+        FROM book_sort
+        WHERE sort_id = #{value}
+    </update>
 
 </mapper>
