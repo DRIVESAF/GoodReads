@@ -29,4 +29,9 @@ class OrderItemServiceTest {
         orderItemService.insert(item);
 
     }
+
+    @Test
+    void deleteByItemId() {
+        orderItemService.deleteByItemId(1);
+    }
 }

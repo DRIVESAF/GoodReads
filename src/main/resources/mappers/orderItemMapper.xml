@@ -15,7 +15,13 @@
 
     <insert id="insert" parameterType="com.zzt.goodreads.entity.OrderItem">
         INSERT
-        INTO orderItem(orderitem_id,price,amount,book_id,order_id)
+        INTO orderitem(orderitem_id,price,amount,book_id,order_id)
         VALUES (#{itemId},#{itemPrice},#{itemAmount},#{bookId},#{orderId})
     </insert>
+
+    <update id="deleteByItemId" parameterType="Integer">
+        DELETE
+        FROM orderitem
+        WHERE orderitem_id = #{value}
+    </update>
 </mapper>

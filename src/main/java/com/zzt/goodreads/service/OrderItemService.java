@@ -30,4 +30,12 @@ public class OrderItemService {
              return orderItem;
         });
     }
+
+    public void deleteByItemId(Integer itemId){
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            OrderItemMapper mapper = sqlSession.getMapper(OrderItemMapper.class);
+            mapper.deleteByItemId(itemId);
+            return itemId;
+        });
+    }
 }

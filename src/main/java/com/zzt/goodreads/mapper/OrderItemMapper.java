@@ -14,4 +14,6 @@ public interface OrderItemMapper {
     List<OrderItem> selectAll();
 
     void insert(OrderItem item);
+
+    void deleteByItemId(Integer itemId);
 }

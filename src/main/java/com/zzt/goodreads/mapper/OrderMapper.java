@@ -11,4 +11,8 @@ import com.zzt.goodreads.entity.Order;
 public interface OrderMapper {
     Order selectOrderById(Integer userId);
 
+    void insert(Order order);
+
+    void deleteByOrderId(Integer orderId);
+
 }

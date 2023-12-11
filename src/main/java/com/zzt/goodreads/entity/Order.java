@@ -21,10 +21,11 @@ public class Order {
     private Integer orderId;
     private Float total;
     private Integer orderAmount;
-    private String payWay;
-    private String payStatus;
-    private String userName;
+    private Boolean payType;
+    private Boolean payStatus;
+    private String name;
     private Integer phone;
     private String address;
     private LocalDateTime orderDate;
+    private Integer userId;
 }

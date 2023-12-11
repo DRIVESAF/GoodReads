@@ -3,6 +3,8 @@ package com.zzt.goodreads.service;
 import com.zzt.goodreads.entity.Order;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDateTime;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -23,4 +25,15 @@ class OrderServiceTest {
     }
 
 
+    @Test
+    void insert() {
+        LocalDateTime localDateTime = LocalDateTime.now();
+        Order order = new Order(2,20F,1,true,true,"张三",123456,"南京",localDateTime,1);
+        orderService.insert(order);
+    }
+
+    @Test
+    void deleteByOrderId() {
+        orderService.deleteByOrderId(2);
+    }
 }
