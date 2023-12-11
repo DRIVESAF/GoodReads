@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzt.goodreads.mapper.OrderItemMapper">
+
+    <resultMap id="selectOrderItemMap" type="com.zzt.goodreads.entity.OrderItem">
+        <result column="orderitem_id" property="itemId"/>
+        <result column="price" property="itemPrice"/>
+        <result column="amount" property="itemAmount"/>
+    </resultMap>
+
+    <select id="selectAll" resultType="com.zzt.goodreads.entity.OrderItem" resultMap="selectOrderItemMap">
+        SELECT *
+        FROM orderitem
+    </select>
+
+    <insert id="insert" parameterType="com.zzt.goodreads.entity.OrderItem">
+        INSERT
+        INTO orderitem(orderitem_id,price,amount,book_id,order_id)
+        VALUES (#{itemId},#{itemPrice},#{itemAmount},#{bookId},#{orderId})
+    </insert>
+
+    <update id="deleteByItemId" parameterType="Integer">
+        DELETE
+        FROM orderitem
+        WHERE orderitem_id = #{value}
+    </update>
+</mapper>

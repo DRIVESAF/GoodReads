@@ -7,12 +7,6 @@
         <result column="name" property="bookType"/>
     </resultMap>
 
-<!--    <select id="selectByBookSortName" parameterType="String" resultType="com.zzt.goodreads.entity.BookSort" resultMap="selectByBookSortMap">-->
-<!--        SELECT *-->
-<!--        FROM book_sort-->
-<!--        WHERE name= #{value}-->
-<!--    </select>-->
-
     <select id="selectByBookSortName" parameterType="String" resultType="com.zzt.goodreads.entity.BookSort" resultMap="selectByBookSortMap">
         <bind name="name" value="'%' + name + '%'"/>
         select * from book_sort where name like #{name}

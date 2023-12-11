@@ -19,7 +19,6 @@ public class Book {
     private String bookType;
     private String bookName;
     private Integer bookPrice;
-    private String imageAddress;
     private Integer bookStork;
     private String bookIntro;
     private String bookCover;
