@@ -2,6 +2,8 @@ package com.zzt.goodreads.mapper;
 
 import com.zzt.goodreads.entity.Classify;
 
+import java.util.List;
+
 /**
  * @Description ClassifyMapper
  * @Author zhy
@@ -9,5 +11,5 @@ import com.zzt.goodreads.entity.Classify;
  */
 public interface ClassifyMapper {
 
-    <List> Classify selectAll();
+    List<Classify> selectAll();
 }

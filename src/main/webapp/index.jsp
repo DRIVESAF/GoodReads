@@ -154,7 +154,7 @@
                     <img class="books-classify" src="./images/书籍分类.png" alt="书籍分类">
                 </a>
                 <div class="classify-card">
-                    <c:forEach items="${classifies}}" var="classify">
+                    <c:forEach items="${classifies}" var="classify">
                         <div class="classify-box" style="background-image: url('./images/classify/${classify.classifyCover}');">
                             <a href="#">
                                 <div class="classify-content">
