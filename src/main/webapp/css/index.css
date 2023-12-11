@@ -259,7 +259,45 @@
     margin-top: 10px;
     /*padding: 5px 0 5px 25px;*/
 }
-。
+.hot-box .content{
+    position: relative;
+    display: flex;
+    padding-top: 5px;
+}
+.hot-box .content .content-left{
+    float: left;
+}
+.hot-box .content .content-left h2{
+    padding-left: 5px;
+    font-size: 18px;
+    color:#FFFFFF ;
+}
+.hot-box .content .content-left h3{
+    padding-left: 12px;
+    font-size:12px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+.hot-box .content .content-right{
+    position: absolute;
+    left: 260px;
+}
+.hot-box .content .content-right .icon-gengduo{
+    font-size: 28px;
+    color:#707791 ;
+}
+.hot-box .content-bottom{
+    padding-top: 5px;
+    padding-left: 12px;
+}
+.hot-box .content-bottom span{
+    background-color: rgb(68, 72, 87);
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 4px;
+    margin-right: 2px;
+}
 
 /*main区域结束*/
 
