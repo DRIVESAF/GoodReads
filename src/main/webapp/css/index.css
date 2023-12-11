@@ -4,6 +4,7 @@
 
 /*左侧开始*/
 .left {
+    position: fixed;
     margin: 0 auto;
     float: left;
     height: 100vh;
@@ -71,6 +72,9 @@
 
 .aside .list ul li:hover .icon-guanzhu {
     color: #8f23de;
+}
+.aside .list ul li:hover .icon-goodbook{
+    color: #0299f6;
 }
 
 .aside .list ul li span {
@@ -233,6 +237,7 @@
 }
 .hot{
     margin-top: 20px;
+    height: 650px;
 }
 .hot .hot-books{
     width: 150px;

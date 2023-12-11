@@ -42,13 +42,17 @@
                     </li>
                     <li>
                         <span class="iconfont icon-rexiao"></span>
-                        <a href="#">
+                        <a href="index.jsp#hot">
                             热销书籍
                         </a>
                     </li>
                     <li>
                         <span class="iconfont icon-fenlei"></span>
-                        <a href="#">书籍分类</a>
+                        <a href="index.jsp#classify">书籍分类</a>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-goodbook"></span>
+                        <a href="#">好书推荐</a>
                     </li>
 
                     <li>
@@ -105,13 +109,13 @@
 
         <%--    main区域开始--%>
         <div class="main">
-            <%--            热销书籍--%>
             <%
                 BookService bookService = new BookService();
                 List<Book> books = bookService.selectAll();
                 request.setAttribute("books", books);
             %>
-            <div class="hot">
+            <%--            热销书籍开始--%>
+            <div class="hot" id="hot">
                 <a href="#">
                     <img class="hot-books" src="./images/热销书籍.png" alt="热销书籍">
                 </a>
@@ -137,6 +141,38 @@
                     </c:forEach>
                 </div>
             </div>
+<%--            热销书籍结束--%>
+
+<%--            书籍分类开始--%>
+            <div class="classify" id="classify">
+                <a href="#">
+                    <img class="hot-books" src="./images/书籍分类.png" alt="书籍分类">
+                </a>
+                <div class="hot-card">
+                    <c:forEach items="${books}" var="book">
+                        <div class="hot-box ">
+<%--                            <span></span>--%>
+                            <img src="./images/cover/${book.bookCover}" alt="${book.bookName}">
+                            <div class="content">
+                                <div class="content-left">
+                                    <h2>《${book.bookName}》</h2>
+                                    <h3>${book.author}</h3>
+                                </div>
+                                <div class="content-right">
+                                    <span class="iconfont icon-gengduo"></span>
+                                </div>
+                            </div>
+                            <div class="content-bottom">
+                                <span class="iconfont icon-guanzhu">&nbsp;${book.collect}</span>
+                                <span class="iconfont icon-shuping">&nbsp;${book.comment}</span>
+                                <span class="iconfont icon-liulanliang">&nbsp;${book.browse}</span>
+                            </div>
+                        </div>
+                    </c:forEach>
+                </div>
+            </div>
+<%--            书籍分类结束--%>
+
         </div>
     </div>
 
