@@ -5,8 +5,6 @@
         SELECT *
         FROM user
         WHERE phone = #{value}
-
-
     </select>
 
     <insert id="add" parameterType="com.zzt.goodreads.entity.User">
@@ -14,4 +12,14 @@
         INTO  `user`(user_name,phone,password,email)
         VALUES (#{userName},#{phone}, #{password},#{email})
     </insert>
+
+    <update id="updatePasswordByUserId" parameterType="com.zzt.goodreads.entity.User">
+        UPDATE `user`
+        SET password = #{password} WHERE user_id = #{userId}
+    </update>
+
+    <update id="updateInfoByUserId" parameterType="com.zzt.goodreads.entity.User">
+        UPDATE `user`
+        SET address= #{address},name= #{name} WHERE user_id = #{userId}
+    </update>
 </mapper>

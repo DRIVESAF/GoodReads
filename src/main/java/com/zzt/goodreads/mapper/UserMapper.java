@@ -12,4 +12,8 @@ public interface UserMapper {
     User selectByUserPhone(String phone);
 
     void add(User user);
+
+    void updatePasswordByUserId(User user);
+
+    void updateInfoByUserId(User user);
 }
