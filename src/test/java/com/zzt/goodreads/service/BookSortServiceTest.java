@@ -16,7 +16,7 @@ class BookSortServiceTest {
 
     @Test
     void selectByBookSortName() {
-        bookSort = bookSortService.selectByBookSortName("小说");
+        bookSort = bookSortService.selectByBookSortName("小");
         System.out.println(bookSort);
 
     }

@@ -18,7 +18,7 @@ class BookServiceTest {
     private final BookService bookService= new BookService();
     @Test
     void selectByBookName() {
-        book = bookService.selectByBookName("教父");
+        book = bookService.selectByBookName("教");
         System.out.println(book);
     }
 
