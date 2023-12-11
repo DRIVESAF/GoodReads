@@ -11,13 +11,13 @@ import java.util.List;
  * @Author zhy
  * @Date 2023/12/11 8:11
  */
-public class BookServiceImpl implements BookService {
-    @Override
-    public <List>Book selectAll(){
-        public java.util.List<Book> MyBatisUtils.executeQuery(sqlSession ->{
-            BookMapper mapper = sqlSession.getMapper(BookMapper.class);
-            return mapper.selectAll();
-        });
-    }
-
-}
+//public class BookServiceImpl implements BookService {
+//    @Override
+//    public <List>Book selectAll(){
+//        public java.util.List<Book> MyBatisUtils.executeQuery(sqlSession ->{
+//            BookMapper mapper = sqlSession.getMapper(BookMapper.class);
+//            return mapper.selectAll();
+//        });
+//    }
+//
+//}
