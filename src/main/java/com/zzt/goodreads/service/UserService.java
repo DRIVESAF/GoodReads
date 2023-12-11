@@ -54,4 +54,21 @@ public class UserService {
         }
 
     }
+
+    public void resetPassword(User user){
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            mapper.updatePasswordByUserId(user);
+            return user;
+        });
+    }
+
+    public void resetUserInfo(User user){
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            mapper.updateInfoByUserId(user);
+            return user;
+        });
+    }
+
 }

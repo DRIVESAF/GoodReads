@@ -38,4 +38,19 @@ class UserServiceTest {
         a.setPassword("123456");
         userService.register(a);
     }
+
+    @Test
+    void resetPassword() {
+        a.setUserId(10000);
+        a.setPassword("10000");
+        userService.resetPassword(a);
+    }
+
+    @Test
+    void resetUserInfo(){
+        a.setAddress("翻斗花园");
+        a.setName("牛爷爷");
+        a.setUserId(10000);
+        userService.resetUserInfo(a);
+    }
 }
