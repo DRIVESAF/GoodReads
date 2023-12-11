@@ -304,7 +304,7 @@
 
 /*书籍分类开始*/
 .classify{
-    height: 600px;
+    height: 420px;
     margin-top: 20px;
 }
 
@@ -373,6 +373,29 @@
     bottom: -5px;
 }
 /*书籍分类结束*/
+
+/*好书推荐开始*/
+.recommend{
+    height: 600px;
+    position: relative;
+}
+
+.books-recommend{
+    width: 150px;
+    height: 50px;
+}
+.recommend-tip{
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    width: 125px;
+    height: 24px;
+}
+
+.recommend-card{
+    padding: 0 0 0 10px;
+}
+/*好书推荐结束*/
 /*main区域结束*/
 
 /*回到顶部*/
@@ -389,6 +412,9 @@
     width: 45px;
     height: 45px;
 }
+
+
+
 
 
 

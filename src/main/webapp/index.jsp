@@ -52,7 +52,7 @@
                     </li>
                     <li>
                         <span class="iconfont icon-goodbook"></span>
-                        <a href="#">好书推荐</a>
+                        <a href="index.jsp#recommend">好书推荐</a>
                     </li>
 
                     <li>
@@ -169,6 +169,21 @@
                 </div>
             </div>
             <%--            书籍分类结束--%>
+
+<%--            好书推荐开始--%>
+            <div class="recommend" id="recommend">
+                <a href="#">
+                    <img  class="books-recommend" src="./images/好书推荐.png" alt="好书推荐">
+                    <img class="recommend-tip" src="./images/每天阅读一本书.png"></img>
+                </a>
+                <div class="">
+
+                </div>
+                <div class="recommend-card">
+
+                </div>
+            </div>
+<%--            好书推荐结束--%>
         </div>
         <%--        main区域结束--%>
     </div>
