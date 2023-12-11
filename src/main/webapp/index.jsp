@@ -154,7 +154,7 @@
                     <img class="books-classify" src="./images/书籍分类.png" alt="书籍分类">
                 </a>
                 <div class="classify-card">
-                    <c:forEach items="${classifies}}" var="classify">
+                    <c:forEach items="${classifies}" var="classify">
                         <div class="classify-box" style="background-image: url('./images/classify/${classify.classifyCover}');">
                             <a href="#">
                                 <div class="classify-content">
@@ -175,7 +175,9 @@
 
 <%--    回到顶部--%>
     <div class="back-top">
-        span
+        <a href="index.jsp#top">
+            <img src="./images/回到顶部2.png" alt="回到顶部">
+        </a>
     </div>
 </div>
 </body>

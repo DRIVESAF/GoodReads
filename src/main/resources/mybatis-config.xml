@@ -29,6 +29,7 @@
         <mapper resource="mappers/bookSortMapper.xml"/>
         <mapper resource="mappers/orderMapper.xml"/>
         <mapper resource="mappers/orderItemMapper.xml"/>
+        <mapper resource="mappers/classifyMapper.xml"/>
     </mappers>
 
 </configuration>
