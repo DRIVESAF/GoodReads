@@ -7,6 +7,12 @@
         WHERE book_name = #{value}
     </select>
 
+    <select id="selectAll" resultType="com.zzt.goodreads.entity.Book">
+        SELECT *
+        FROM book
+        ORDER BY id ASC
+    </select>
+
     <insert id="insert" parameterType="com.zzt.goodreads.entity.Book">
         INSERT
         INTO `book`(book_name,book_type)

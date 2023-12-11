@@ -8,6 +8,8 @@ import com.zzt.goodreads.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * @Author ctynt
  * @Date 2023/12/7
@@ -40,4 +42,11 @@ public class BookService {
             return bookName;
         });
     }
+    /*
+     * 查询所有热销书籍
+     *
+     * @return: List<Book>
+     * */
+//    List<Book> selectAll();
+
 }
