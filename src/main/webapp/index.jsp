@@ -175,7 +175,9 @@
 
 <%--    回到顶部--%>
     <div class="back-top">
-        span
+        <a href="index.jsp#top">
+            <img src="./images/回到顶部2.png" alt="回到顶部">
+        </a>
     </div>
 </div>
 </body>

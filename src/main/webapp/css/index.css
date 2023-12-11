@@ -372,12 +372,23 @@
     position: absolute;
     bottom: -5px;
 }
-
-
-
-
 /*书籍分类结束*/
 /*main区域结束*/
+
+/*回到顶部*/
+#id{
+    position: relative;
+}
+
+.back-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.back-top img {
+    width: 45px;
+    height: 45px;
+}
 
 
 

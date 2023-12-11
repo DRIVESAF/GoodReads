@@ -11,5 +11,6 @@ import java.util.List;
  */
 public interface ClassifyMapper {
 
-    List<Classify> selectAll();
+    List <Classify> selectAll();
+
 }
