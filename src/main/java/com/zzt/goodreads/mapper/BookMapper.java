@@ -2,6 +2,8 @@ package com.zzt.goodreads.mapper;
 
 import com.zzt.goodreads.entity.Book;
 
+import java.util.List;
+
 /**
  * @Author ctynt
  * @Date 2023/12/7
@@ -14,4 +16,5 @@ public interface BookMapper {
    void insert(Book book);
 
    void delete(String bookName);
+   List<Book> selectAll();
 }

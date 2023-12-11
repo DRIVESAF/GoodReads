@@ -1,5 +1,9 @@
 <%@ page import="com.zzt.goodreads.entity.User" %>
 <%@ page import="com.zzt.goodreads.entity.Order" %>
+<%@ page import="com.zzt.goodreads.service.BookService" %>
+<%@ page import="com.zzt.goodreads.service.impl.BookServiceImpl" %>
+<%@ page import="com.zzt.goodreads.entity.Book" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
@@ -15,10 +19,13 @@
 <%
     User user = (User) request.getSession().getAttribute("user");
     request.setAttribute("user", user);
-%>
-<%
+
     Order order = (Order) request.getSession().getAttribute("order");
     request.setAttribute("order", order);
+
+    BookService bookService = new BookServiceImpl();
+//    List<Book> books = bookService.selectAll();
+//    request.setAttribute("books", books);
 %>
 <div>
     <div class="left">
