@@ -73,7 +73,8 @@
 .aside .list ul li:hover .icon-guanzhu {
     color: #8f23de;
 }
-.aside .list ul li:hover .icon-goodbook{
+
+.aside .list ul li:hover .icon-goodbook {
     color: #0299f6;
 }
 
@@ -235,64 +236,74 @@
 }
 
 /*热销书籍开始*/
-.hot{
+.hot {
     margin-top: 20px;
     height: 640px;
 }
-.hot .hot-books{
+
+.hot .hot-books {
     width: 150px;
     height: 50px;
 }
 
-.hot-box{
+.hot-box {
     background-color: #1E1E26;
     border-radius: 10px;
     width: 300px;
-    height:280px;
+    height: 280px;
     float: left;
     margin-top: 10px;
     margin-right: 20px;
 
 }
-.hot-box img{
+
+.hot-box img {
     width: 240px;
     height: 180px;
     border-radius: 8px;
     margin-left: 30px;
     margin-top: 10px;
 }
-.hot-box .content{
+
+.hot-box .content {
     position: relative;
     display: flex;
     padding-top: 5px;
 }
-.hot-box .content .content-left{
+
+.hot-box .content .content-left {
     float: left;
 }
-.hot-box .content .content-left h2{
+
+.hot-box .content .content-left h2 {
     padding-left: 22px;
     font-size: 16px;
-    color:#FFFFFF ;
+    color: #FFFFFF;
 }
-.hot-box .content .content-left h3{
+
+.hot-box .content .content-left h3 {
     padding-left: 28px;
-    font-size:10px;
+    font-size: 10px;
     color: #FFFFFF;
     display: inline-block;
 }
-.hot-box .content .content-right{
+
+.hot-box .content .content-right {
     position: absolute;
     left: 240px;
 }
-.hot-box .content .content-right .icon-gengduo{
+
+.hot-box .content .content-right .icon-gengduo {
     font-size: 25px;
-    color:#707791 ;
+    color: #707791;
 }
-.hot-box .content-bottom{
+
+.hot-box .content-bottom {
     padding-top: 2px;
     padding-left: 28px;
 }
-.hot-box .content-bottom span{
+
+.hot-box .content-bottom span {
     background-color: rgb(68, 72, 87);
     border-radius: 4px;
     color: #FFFFFF;
@@ -300,22 +311,25 @@
     padding: 4px;
     margin-right: 2px;
 }
+
 /*热销书籍结束*/
 
 /*书籍分类开始*/
-.classify{
+.classify {
     height: 420px;
     margin-top: 20px;
 }
 
-.books-classify{
+.books-classify {
     width: 150px;
     height: 50px;
 }
-.classify-card{
+
+.classify-card {
     padding: 0 0 0 10px;
 }
-.classify-box{
+
+.classify-box {
     float: left;
     position: relative;
     width: 200px;
@@ -326,13 +340,14 @@
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.3s;
-    margin: 20px 36px 0 0 ;
+    margin: 20px 36px 0 0;
 }
+
 .classify-box:hover {
     opacity: 0.8;
 }
 
-.classify-content{
+.classify-content {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -341,7 +356,8 @@
     justify-content: center;
     align-items: center;
 }
-.classify-content .classify-add{
+
+.classify-content .classify-add {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -351,7 +367,8 @@
     color: #10c469;
     background-color: rgba(16, 196, 105, .18)
 }
-.classify-title{
+
+.classify-title {
     width: 100%;
     font-size: 16px;
     color: #eaebf4;
@@ -364,7 +381,7 @@
     text-align: center;
 }
 
-.classify-title::after{
+.classify-title::after {
     content: "";
     background: #ffffff;
     width: 40px;
@@ -372,42 +389,77 @@
     position: absolute;
     bottom: -5px;
 }
+
 /*书籍分类结束*/
 
 /*好书推荐开始*/
-.recommend{
+.recommend {
     height: 600px;
     position: relative;
 }
 
-.books-recommend{
+.recommend-title {
+    float: left;
+}
+
+.books-recommend {
     width: 150px;
     height: 50px;
 }
-.recommend-tip{
-    position: absolute;
-    top: 20px;
-    left: 140px;
+
+.recommend-tip {
+    margin-top: 20px;
+    margin-left: -12px;
     width: 125px;
     height: 24px;
 }
 
-.recommend-card{
+.recommend-classify {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.recommend-classify a {
+    float: left;
+    margin-right: 10px;
+    color:#f8f9fa ;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #323541;
+    box-shadow: 0 0 0 rgb(238 242 247 / 50%);
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.recommend-classify a.active {
+    background-color: #f8f9fa;
+    color: #323541;
+    border-radius: 4px;
+}
+
+.recommend-card {
     padding: 0 0 0 10px;
 }
+
+
 /*好书推荐结束*/
 /*main区域结束*/
 
 /*回到顶部*/
-#id{
+#id {
     position: relative;
 }
 
-.back-top{
+.back-top {
     position: fixed;
     bottom: 10px;
     right: 10px;
 }
+
 .back-top .top {
     width: 45px;
     height: 45px;

@@ -172,14 +172,26 @@
 
 <%--            好书推荐开始--%>
             <div class="recommend" id="recommend">
-                <a href="#">
-                    <img  class="books-recommend" src="./images/好书推荐.png" alt="好书推荐">
-                    <img class="recommend-tip" src="./images/每天阅读一本书.png"></img>
-                </a>
-                <div class="">
-
+                <div class="recommend-title">
+                    <a href="#">
+                        <img  class="books-recommend" src="./images/好书推荐.png" alt="好书推荐">
+                        <img class="recommend-tip" src="./images/每天阅读一本书.png"></img>
+                    </a>
+                    <div class="recommend-classify">
+                        <a href="javascript:" class="active">最新</a>
+                        <a href="javascript:">文学经典</a>
+                        <a href="javascript:">人文纪实</a>
+                        <a href="javascript:">互联网</a>
+                        <a href="javascript:">心理成长</a>
+                        <a href="javascript:">投资理财</a>
+                        <a href="javascript:">两性情感</a>
+                        <a href="javascript:">社科新知</a>
+                        <a href="javascript:">职场发展</a>
+                    </div>
                 </div>
+
                 <div class="recommend-card">
+                    
 
                 </div>
             </div>
