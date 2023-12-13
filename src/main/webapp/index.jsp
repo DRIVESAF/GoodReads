@@ -29,7 +29,7 @@
     <div class="left">
         <div class="aside">
             <%--            logo--%>
-            <a href="http://localhost:8080/index.jsp" class="logo">
+            <a href="http://localhost:8080/index" class="logo">
                 <img src="./images/GoodReads.png" alt="">
                 <span>入书香之地，摘智慧之果</span>
             </a>
@@ -38,7 +38,7 @@
                 <ul>
                     <li>
                         <span class="iconfont icon-shouye "></span>
-                        <a href="http://localhost:8080/index.jsp">我的主页</a>
+                        <a href="http://localhost:8080/index">我的主页</a>
                     </li>
                     <li>
                         <span class="iconfont icon-rexiao"></span>
@@ -101,11 +101,13 @@
             <%--    个人中心--%>
             <div class="font personal">
                 <a href="#">
-                    <span class="iconfont icon-shengdangerenzhongxin "></span>
+                    <a class="iconfont icon-shengdangerenzhongxin " href="${pageContext.request.contextPath}/user"></a>
                 </a>
             </div>
         </div>
         <%--    header区域结束--%>
+
+
 
         <%--    main区域开始--%>
         <div class="main">
