@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630092",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "2985768",
+      "name": "专栏",
+      "font_class": "zhuanlan",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "6038522",
+      "name": "后台_专栏",
+      "font_class": "houtai_zhuanlan",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "7450612",
+      "name": "积分商城1",
+      "font_class": "jifenshangcheng",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "13604156",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "26708207",
+      "name": "设 置-树菜单设置",
+      "font_class": "a-shezhi-shucaidanshezhi",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "26796293",
+      "name": "收藏",
+      "font_class": "shoucang-shoucang",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "31919293",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "33733317",
+      "name": "记笔记",
+      "font_class": "jibiji",
+      "unicode": "e73e",
+      "unicode_decimal": 59198
+    }
+  ]
+}
