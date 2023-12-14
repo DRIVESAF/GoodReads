@@ -14,7 +14,6 @@
     <style>
         @import url("./css/home.css");
     </style>
-    <script src="js/index.js"></script>
 </head>
 <body class="wrapper">
 <%
@@ -108,7 +107,6 @@
         <%--    header区域结束--%>
 
 
-
         <%--    main区域开始--%>
         <div class="main">
             <%
@@ -135,7 +133,7 @@
                                     <h3>${book.author}</h3>
                                 </div>
                                 <div class="content-right">
-                                    <span class="iconfont icon-gengduo"></span>
+                                    <span class="iconfont icon-gouwuche add_btn"></span>
                                 </div>
                             </div>
                             <div class="content-bottom">
@@ -157,7 +155,8 @@
                 </a>
                 <div class="classify-card">
                     <c:forEach items="${classifies}" var="classify">
-                        <div class="classify-box" style="background-image: url('./images/classify/${classify.classifyCover}');">
+                        <div class="classify-box"
+                             style="background-image: url('./images/classify/${classify.classifyCover}');">
                             <a href="#">
                                 <div class="classify-content">
                                     <div class="classify-content">
@@ -172,11 +171,11 @@
             </div>
             <%--            书籍分类结束--%>
 
-<%--            好书推荐开始--%>
+            <%--            好书推荐开始--%>
             <div class="recommend" id="recommend">
                 <div class="recommend-title">
                     <a href="#">
-                        <img  class="books-recommend" src="./images/好书推荐.png" alt="好书推荐">
+                        <img class="books-recommend" src="./images/好书推荐.png" alt="好书推荐">
                         <img class="recommend-tip" src="./images/每天阅读一本书.png"></img>
                     </a>
                     <div class="recommend-classify">
@@ -192,24 +191,259 @@
                     </div>
                 </div>
 
-                <div class="recommend-card">
-                    
-
+                <div class="recommend-list">
+                    <ul class="current">
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    文学经典开始--%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    文学经典结束--%>
+                    <%--                    人文纪实开始--%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    人文纪实结束--%>
+                    <%--                    互联网开始--%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    互联网结束--%>
+                    <%--                    心理成长开始--%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    心里成长结束--%>
+                    <%--                    投资理财开始--%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    投资理财结束--%>
+                    <%--                两性情感开始    --%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    两性情感结束--%>
+                    <%--                    社科新知开始--%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    社科新知结束--%>
+                    <%--                    职场发展开始--%>
+                    <ul>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">科幻</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">你一生的故事</p>
+                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
+                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
+                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
+                                    还有，你的一生。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <%--                    职场发展结束--%>
                 </div>
             </div>
-<%--            好书推荐结束--%>
         </div>
-        <%--        main区域结束--%>
     </div>
+    <%--            好书推荐结束--%>
+</div>
+<%--        main区域结束--%>
+</div>
 
 <%--    回到顶部--%>
-    <div class="back-top">
-<%--        <img class="tip" src="./images/回到顶部文字.png">--%>
-        <a href="index.jsp#top">
-            <img class="top" src="./images/回到顶部2.png" alt="回到顶部">
-        </a>
-    </div>
+<div class="back-top">
+    <%--        <img class="tip" src="./images/回到顶部文字.png">--%>
+    <a href="index.jsp#top">
+        <img class="top" src="./images/回到顶部2.png" alt="回到顶部">
+    </a>
 </div>
+</div>
+<script src="js/index.js"></script>
 </body>
 
 </html>
