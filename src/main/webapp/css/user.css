@@ -1,3 +1,408 @@
-.user{
+body {
     background-color: #131418;
+}
+/* 顶部通栏 */
+#header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 63px;
+    z-index: 999;
+}
+
+.nav-box {
+    width: 1152px;
+    margin: 0 auto;
+
+}
+
+/* 课程导航栏 */
+.item-box {
+    height: 63px;
+    line-height: 63px;
+}
+
+.item-box .nav-item {
+    float: left;
+    padding: 0 16px;
+    font-size: 16px;
+}
+
+
+/* 搜索框 */
+.search {
+    padding: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 40px;
+}
+
+.search div {
+    background-color: #F3F5F6;
+}
+
+.search div input {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border: 0;
+    background-color: #F3F5F6;
+}
+
+.search .iconfont {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* 个人中心 */
+.login-area {
+    line-height: 63px;
+
+
+}
+
+.login-area a {
+    padding: 0 10px;
+    color: #545c63;
+    font-size: 15px;
+}
+
+.login-area .shop-cart {
+    position: relative;
+
+}
+
+.login-area a:hover {
+    color: #FFFFFF;
+}
+
+.login-area .shop-cart .cart-num {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    display: block;
+    width: 20px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #E77169;
+}
+
+.login-area a img {
+    width: 35px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(40%);
+}
+
+.nav-item a {
+    color: #FFFFFF;
+}
+
+.bg-other {
+    background-color: #131418;
+}
+.user-head-info .user-info {
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.user-head-info .user-info .user-pic {
+    float: left;
+    width: 148px;
+    height: 148px;
+}
+
+.user-head-info .user-info .user-pic .user-pic-bg {
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+    width: 140px;
+    height: 140px;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    top: 24px;
+}
+
+.user-head-info .user-info .user-pic .user-pic-bg .img {
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.user-head-info .user-info .user-info-right {
+    float: right;
+    width: 980px;
+}
+
+.user-head-info .user-info .user-name {
+    font-weight: 600;
+    text-align: left;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-top: 48px;
+}
+
+.user-head-info .user-info .user-name .signicon, .user-head-info .user-info .user-name span {
+    float: left;
+}
+
+.user-head-info .user-info .about-info {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 6px;
+}
+
+.user-head-info .user-info .about-info span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+.about-info a {
+    color: #FFFFFF;
+}
+.user-head-info .user-info .about-info a.more-user-info {
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    line-height: 16px;
+    display: inline-block;
+    height: 16px;
+    padding-left: 16px;
+    border-left: 2px solid rgba(255,255,255,.4);
+    cursor: pointer;
+}
+
+.user-head-info .user-info .about-info a.more-user-info i {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+
+
+.user-head-info .study-info {
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    min-width: 200px;
+    text-align: right;
+}
+
+.user-head-info .study-info .follows {
+    margin-right: 24px;
+}
+
+.user-head-info .study-info .item {
+    line-height: 48px;
+    vertical-align: middle;
+    height: 48px;
+    float: left;
+}
+
+.user-head-info .study-info .item span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    line-height: 20px;
+    margin-top: 4px;
+}
+
+.user-head-info .study-info .set-btn {
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 18px;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    line-height: 20px;
+    height: 20px;
+}
+
+.user-head-info .study-info .set-btn i {
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.u-container {
+    margin-left: 200px;
+    min-height: 589px;
+}
+
+
+
+.c-tab {
+    font-size: 16px;
+    color: #545c63;
+    width: 960px;
+    height: 52px;
+    line-height: 52px;
+    margin-top: 18px;
+    border-bottom: 1px solid #d9dde1;
+
+}
+
+.user-total label {
+    margin-left: 30px;
+    color: #FFFFFF;
+}
+
+
+.user-total input {
+    width: 250px;
+    height: 30px;
+    background-color: #f6fdff;
+    border: 1px solid #e7eaf3;
+    padding:6px 12px;
+    border-radius: 4px;
+}
+
+.user-total .user-submit{
+    float: right;
+    width: 60px;
+    border: 1px solid #e7eaf3;
+    padding: 6px 12px;
+    background-color: #FFFFFF;
+    color: #131418;
+    border-radius: 4px;
+}
+
+.c-tab .sort-item {
+    margin-right: 64px;
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.all-course-main {
+    width: 960px;
+    margin-top: 28px;
+}
+
+.not-conts {
+    font-size: 18px;
+    color: #b5b9bc;
+    text-align: center;
+    padding: 145px 0 100px;
+}
+
+.not-conts .find-course {
+    color: #f01400;
+}
+
+.recomment-body {
+    width: 100%;
+    margin-top: 48px;
+    padding-bottom: 40px;
+}
+
+.recomment-body .title-box {
+    display: flex;
+    justify-content: space-between;
+}
+.recomment-body .title-box .title-box {
+    color: #FFFFFF;
+}
+
+.recomment-body .more {
+    cursor: pointer;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.recomment-body ul {
+    clear: both;
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recomment-body ul li {
+    width: 216px;
+    margin-bottom: 20px;
+}
+
+.recomment-body ul li .recommend-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recomment-body ul li .img {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.recomment-body ul li .img img {
+    width: 216px;
+    height: 120px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.recomment-body ul li .content {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.recomment-body ul li .content p.title {
+    margin-top: 0;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 4px;
+    max-height: 44px;
+    overflow: hidden;
+}
+
+.recomment-body ul li .content .info {
+
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 18px;
+}
+
+.recomment-body ul li .content .info span:first-child {
+    font-weight: 700;
+}
+
+.recomment-body ul li .content .info span {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.recomment-body ul li .content .info span.imv2-set-sns {
+    margin-right: 0;
+}
+
+.recomment-body ul li .content .info span {
+    margin-right: 12px;
+}
+
+.title-box span {
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 18px;
 }

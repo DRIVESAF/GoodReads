@@ -1,0 +1,76 @@
+.wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.slider {
+    position: absolute;
+    width: 172px;
+    left: 24px;
+    top: 20px;
+}
+
+.slider ul li {
+    height: 48px;
+    width: 160px;
+    margin: 0 auto 8px;
+}
+
+.slider ul li:first-child {
+    margin-top: 40px;
+}
+
+.slider ul a.active {
+    color: #FFFFFF;
+    background-color: #66c5ff;
+    border-radius: 8px 0 0 8px;
+}
+
+.slider ul a {
+    position: relative;
+    display: block;
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+    padding-left: 54px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.slider ul a i {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 48px;
+}
+
+.slider ul a .new-icn {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    left: 120px;
+    width: 16px;
+    height: 16px;
+
+}
+
+.slider .li-active a.active:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 24px solid #131418;
+    border-bottom: 24px solid #131418;
+    border-left: 15px solid transparent;
+}
+
+.slider .color {
+    color: #FFFFFF;
+}
