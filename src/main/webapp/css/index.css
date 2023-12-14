@@ -293,9 +293,9 @@
     left: 240px;
 }
 
-.hot-box .content .content-right .icon-gengduo {
-    font-size: 25px;
-    color: #707791;
+.hot-box .content .content-right .icon-gouwuche {
+    font-size: 20px;
+    color: #FFFFFF;
 }
 
 .hot-box .content-bottom {
@@ -423,7 +423,7 @@
 .recommend-classify a {
     float: left;
     margin-right: 10px;
-    color:#f8f9fa ;
+    color: #f8f9fa;
     font-size: 14px;
     padding: 3px;
     border-radius: 3px;
@@ -433,23 +433,101 @@
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 .recommend-classify a.active {
     background-color: #f8f9fa;
     color: #323541;
     border-radius: 4px;
 }
+.recommend-list ul{
+    display: none;
+}
+.recommend-list ul.current{
+    display: block;
+}
+.recommend-list .recommend-card {
+    display: flex;
+    float: left;
+    padding: 5px;
+    background-color: #1E1E26;
+    width: 460px;
+    height: 130px;
+    margin: 25px 20px 0 0;
+    border-radius: 10px;
+}
 
-.recommend-card {
-    padding: 0 0 0 10px;
+.recommend-list .recommend-card .card-img {
+    position: relative;
+}
+.recommend-list .recommend-card .card-img>span{
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.recommend-list .recommend-card .card-img img {
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.recommend-card div {
+    padding: 5px 10px 5px 15px;
+}
+
+.recommend-card div .blue {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #0299f6;
+}
+
+.recommend-card div .green {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #10c469;
+}
+
+.recommend-card div .card-classify {
+    font-size: 12px;
+    color: #A6A6A6;
+}
+
+.recommend-card div .card-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.recommend-card div .card-content {
+    font-size: 12px;
+}
+
+.recommend-card div .iconfont {
+    font-size: 11px;
+    color: #A6A6A6;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+
+.recommend-card div .icon-yarn {
+    color: #0299f6;
+    font-size: 12px;
 }
 
 
-/*好书推荐结束*/
-/*main区域结束*/
-
-/*回到顶部*/
+.recommend-card div
+    /*好书推荐结束*/
+    /*main区域结束*/
+    /*回到顶部*/
 #id {
     position: relative;
 }

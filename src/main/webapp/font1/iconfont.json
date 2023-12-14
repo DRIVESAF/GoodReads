@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "356472",
+      "name": "时间",
+      "font_class": "time",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1454740",
+      "name": "专辑播放",
+      "font_class": "zhuanjibofang",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "464182",
+      "name": "回到顶部",
+      "font_class": "backtop",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "16176483",
+      "name": "回到顶部1",
+      "font_class": "backtop1",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "23416265",
+      "name": "回到顶部2",
+      "font_class": "backtop2",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
       "icon_id": "23719267",
       "name": "图钉",
       "font_class": "tuding",
