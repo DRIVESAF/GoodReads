@@ -254,8 +254,14 @@
     float: left;
     margin-top: 10px;
     margin-right: 20px;
-
+    transition: all .2s;
 }
+
+.hot-box:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
 
 .hot-box img {
     width: 240px;
@@ -394,7 +400,7 @@
 
 /*好书推荐开始*/
 .recommend {
-    height: 600px;
+    /*height: 600px;*/
     position: relative;
 }
 
@@ -417,7 +423,7 @@
 .recommend-classify {
     display: inline-block;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 200px;
 }
 
 .recommend-classify a {
@@ -441,12 +447,15 @@
     color: #323541;
     border-radius: 4px;
 }
-.recommend-list ul{
+
+.recommend-list ul {
     display: none;
 }
-.recommend-list ul.current{
+
+.recommend-list ul.current {
     display: block;
 }
+
 .recommend-list .recommend-card {
     display: flex;
     float: left;
@@ -456,12 +465,19 @@
     height: 130px;
     margin: 25px 20px 0 0;
     border-radius: 10px;
+    transition: all .3s;
+}
+
+.recommend-card:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .recommend-list .recommend-card .card-img {
     position: relative;
 }
-.recommend-list .recommend-card .card-img>span{
+
+.recommend-list .recommend-card .card-img > span {
     position: absolute;
     top: 3px;
     left: 10px;
@@ -503,8 +519,9 @@
 
 .recommend-card div .card-title {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
+    padding: 2px 0 8px 0;
 }
 
 .recommend-card div .card-content {
@@ -519,15 +536,32 @@
 }
 
 .recommend-card div .icon-yarn {
-    color: #0299f6;
-    font-size: 12px;
+    color: #66C5FF;
+    font-size: 14px;
+}
+
+/*好书推荐结束*/
+
+/*我的订单开始*/
+.section {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.order > a > img {
+    width: 150px;
+    height: 50px;
+}
+
+div.order {
+    display: block;
+    margin-top: 20px;
 }
 
 
-.recommend-card div
-    /*好书推荐结束*/
-    /*main区域结束*/
-    /*回到顶部*/
+/*我的订单结束*/
+/*main区域结束*/
+/*回到顶部*/
 #id {
     position: relative;
 }
