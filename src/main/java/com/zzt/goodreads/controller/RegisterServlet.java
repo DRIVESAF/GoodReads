@@ -51,7 +51,7 @@ public class RegisterServlet extends HttpServlet {
             response.sendRedirect("/index");
         } catch (Exception e) {
             e.printStackTrace();
-            // 登录失败，service会执行 throw new LoginException 操作，在这里捕获，并将失败原因返回给客户端
+
             resp = new ResponseUtils(e.getClass().getSimpleName(), e.getMessage());
         }
         // 返回JSON结果

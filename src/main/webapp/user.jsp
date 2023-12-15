@@ -1,10 +1,5 @@
 <%@ page import="com.zzt.goodreads.entity.User" %>
-<%@ page import="com.zzt.goodreads.service.BookService" %>
-<%@ page import="com.zzt.goodreads.entity.Book" %>
-<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <html>
 <head>
     <title>个人中心</title>
@@ -16,11 +11,6 @@
 <%
     User user = (User) request.getSession().getAttribute("user");
     request.setAttribute("user", user);
-
-    BookService bookService = new BookService();
-    List<Book> books = bookService.selectAll();
-    request.setAttribute("books", books);
-//
 %>
 <div id="header">
     <!-- 导航栏 -->
@@ -101,26 +91,29 @@
 
     <div class="u-container">
         <div class="c-tab clearfix">
-            <div class="user-total">
-                <a href="" class="sort-item active">个人基本信息</a>
-                <div class="user user-info1">
-                    <label>账户名：</label>
-                    <input type="text">
-                    <label>姓名：</label>
-                    <input type="text">
-                </div>
-                <div class="user  user-info2">
-                    <label>邮箱：</label>
-                    <input type="text">
-                    <label>手机号：</label>
-                    <input type="text">
-                </div>
-                <div class="user-info3">
-                    <label>地址：</label>
-                    <input type="text">
-                </div>
-
-                <button type="submit" class="user-submit">保存</button>
+            <div class="user-total" >
+                <form action="/user" method="post">
+                    <a href="" class="sort-item active">个人基本信息</a>
+                    <div class="user user-info1">
+                        <label>账户名：</label>
+                        <input type="text" value="${user.userName}" name="userName">
+                        <label>账户ID：</label>
+                        <input type="text" value="${user.userId}" name="userId">
+                    </div>
+                    <div class="user  user-info2">
+                        <label>姓名：</label>
+                        <input type="text" value="${user.name}" name="name">
+                        <label>邮箱：</label>
+                        <input type="text" value="${user.email}" name="email">
+                    </div>
+                    <div class="user-info3">
+                        <label>手机号：</label>
+                        <input type="text" value="${user.phone}" name="phone">
+                        <label>地址：</label>
+                        <input type="text" value="${user.address}" name="address">
+                    </div>
+                    <button class="user-submit">保存</button>
+                </form>
             </div>
         </div>
         <div class="all-course-main">
@@ -136,76 +129,61 @@
                     </div>
                     <ul>
                         <li> <a href="" class="recommend-item">
-                            <div class="img l"> <img width="216" height="120" src="">
+                            <div class="img l"> <img width="240px" height="180px" src="./images/cover/教父.webp">
                             </div>
                             <div class="content">
-                                <p class="title">《梦的解析》</p>
+                                <p class="title">《教父》</p>
                                 <div class="info">
-                                    <span>¥ 149.00</span>
-                                    <span class="iconfont icon-guanzhu">&nbsp;11</span>
-                                    <span class="iconfont icon-shuping">&nbsp;22</span>
-                                    <span class="iconfont icon-liulanliang">33</span>
-                                </div>
-                            </div>
-                        </a>
-                        </li>
-                        <li> <a href="" class="recommend-item">
-                            <div class="img l"> <img width="216" height="120" src="">
-                            </div>
-                            <div class="content">
-                                <p class="title">《梦的解析》</p>
-                                <div class="info">
-                                    <span>¥ 149.00</span>
-                                    <span class="iconfont icon-guanzhu">&nbsp;11</span>
-                                    <span class="iconfont icon-shuping">&nbsp;22</span>
-                                    <span class="iconfont icon-liulanliang">33</span>
-                                </div>
-                            </div>
-                        </a>
-                        </li>
-                        <li> <a href="" class="recommend-item">
-                            <div class="img l"> <img width="216" height="120" src="">
-                            </div>
-                            <div class="content">
-                                <p class="title">《梦的解析》</p>
-                                <div class="info">
-                                    <span>¥ 149.00</span>
-                                    <span class="iconfont icon-guanzhu">&nbsp;11</span>
-                                    <span class="iconfont icon-shuping">&nbsp;22</span>
-                                    <span class="iconfont icon-liulanliang">33</span>
-                                </div>
-                            </div>
-                        </a>
-                        </li>
-                        <li> <a href="" class="recommend-item">
-                            <div class="img l"> <img width="216" height="120" src="">
-                            </div>
-                            <div class="content">
-                                <p class="title">《梦的解析》</p>
-                                <div class="info">
-                                    <span>¥ 149.00</span>
-                                    <span class="iconfont icon-guanzhu">&nbsp;11</span>
-                                    <span class="iconfont icon-shuping">&nbsp;22</span>
-                                    <span class="iconfont icon-liulanliang">33</span>
-                                </div>
-                            </div>
-                        </a>
-                        </li>
-                        <li> <a href="" class="recommend-item">
-                            <div class="img l"> <img width="216" height="120" src="">
-                            </div>
-                            <div class="content">
-                                <p class="title">《梦的解析》</p>
-                                <div class="info">
-                                    <span>¥ 149.00</span>
-                                    <span class="iconfont icon-guanzhu">&nbsp;11</span>
-                                    <span class="iconfont icon-shuping">&nbsp;22</span>
-                                    <span class="iconfont icon-liulanliang">33</span>
-                                </div>
-                            </div>
-                        </a>
-                        </li>
 
+                                    <span class="iconfont icon-guanzhu">&nbsp;2365</span>
+                                    <span class="iconfont icon-shuping">&nbsp;99</span>
+                                    <span class="iconfont icon-liulanliang">6542</span>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+                        <li> <a href="" class="recommend-item">
+                            <div class="img l"> <img width="240px" height="180px" src="./images/cover/霍乱时期的爱情.webp">
+                            </div>
+                            <div class="content">
+                                <p class="title">《霍乱时期的爱情》</p>
+                                <div class="info">
+
+                                    <span class="iconfont icon-guanzhu">&nbsp;1235</span>
+                                    <span class="iconfont icon-shuping">&nbsp;63</span>
+                                    <span class="iconfont icon-liulanliang">3256</span>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+                        <li> <a href="" class="recommend-item">
+                            <div class="img l"> <img width="240px" height="180px"  src="./images/cover/活着.webp">
+                            </div>
+                            <div class="content">
+                                <p class="title">《活着》</p>
+                                <div class="info">
+
+                                    <span class="iconfont icon-guanzhu">&nbsp;1659</span>
+                                    <span class="iconfont icon-shuping">&nbsp;30</span>
+                                    <span class="iconfont icon-liulanliang">4521</span>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+                        <li> <a href="" class="recommend-item">
+                            <div class="img l"> <img width="240px" height="180px" src="./images/cover/梦的解析.webp">
+                            </div>
+                            <div class="content">
+                                <p class="title">《梦的解析》</p>
+                                <div class="info">
+
+                                    <span class="iconfont icon-guanzhu">&nbsp;986</span>
+                                    <span class="iconfont icon-shuping">&nbsp;12</span>
+                                    <span class="iconfont icon-liulanliang">2265</span>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
                     </ul>
                 </div>
             </div>

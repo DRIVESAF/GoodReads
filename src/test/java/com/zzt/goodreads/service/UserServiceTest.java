@@ -49,8 +49,11 @@ class UserServiceTest {
     @Test
     void resetUserInfo(){
         a.setAddress("翻斗花园");
-        a.setName("牛爷爷");
+        a.setName("爷爷");
         a.setUserId(10000);
+        a.setUserName("666");
+        a.setPhone("123456");
+        a.setEmail("123@qq.com");
         userService.resetUserInfo(a);
     }
 }
