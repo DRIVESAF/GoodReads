@@ -679,22 +679,160 @@
                     <ul>
                         <li class="recommend-card">
                             <div class="card-img">
-                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <img src="./images/recommend/最新/激荡三十年.jpg" alt="激荡三十年">
                                 <span class="iconfont icon-zhuanjibofang"></span>
                             </div>
                             <div>
                                 <span class="blue"></span>
-                                <span class="card-classify">科幻</span>
+                                <span class="card-classify">互联网</span>
                                 <span class="green"></span>
                                 <span class="card-classify">视频书</span>
-                                <p class="card-title">你一生的故事</p>
-                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
-                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
-                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
-                                    还有，你的一生。</p>
+                                <p class="card-title">激荡三十年</p>
+                                <p class="card-content ellipsis2">
+                                    尽管任何一段历史都有它不可替代的独特性，可是，1978年－2008年的中国，却是不可能重复的。在一个拥有13亿人口的大国里，僵化的计划经济体制日渐瓦解了，
+                                    一群小人物把中国变成了一个巨大的试验场，它在众目睽睽之下，以不可逆转的姿态向商业社会转轨。</p>
                                 <span class="iconfont icon-yarn"></span>
                                 <span class="iconfont icon-time">&nbsp;6月前</span>
-                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;435</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/创新者的窘境.jpg" alt="创新者的窘境">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">互联网</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">创新者的窘境</p>
+                                <p class="card-content ellipsis2">管理类经典图书
+                                    o 被《福布斯》评为20世纪最具影响的20本商业图书之一
+                                    o “全球商业书籍奖”获奖图书
+                                    “颠覆大师”克莱顿•克里斯坦森经典力作。
+                                    《金融时报》/布兹•亚兰及汉密顿全球商务书刊颁发“1997年最佳商务书”奖</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;116</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/定位.jpg" alt="定位">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">互联网</span>
+                                <span class="green"></span>
+                                <span class="card-classify">职场发展</span>
+                                <p class="card-title">定位</p>
+                                <p class="card-content ellipsis2">
+                                    20多年前，美国《广告时代》杂志约请年轻的营销专家里斯和特劳特撰写一系列有关营销和广告新思维的文章，总标题就是“定位的时代”。系列文章刊载之后，引起全行业的轰动，
+                                    定位成了营销界人人谈论的热闹话题，经作者之手送出的文章就达12万份之多，由此开创了营销理论全面创新的时代。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;6月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;199</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/最新/浪潮之巅.jpg" alt="浪潮之巅">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">互联网</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">浪潮之巅</p>
+                                <p class="card-content ellipsis2">
+                                    近一百多年来，总有一些公司很幸运地、有意识或无意识地站在技术革命的浪尖之上。在这十几年间，它们代表着科技的浪潮，直到下一波浪潮的来临。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;12月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;503</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/互联网/原则.jpg" alt="原则">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">互联网</span>
+                                <span class="green"></span>
+                                <span class="card-classify">职场发展</span>
+                                <p class="card-title">原则</p>
+                                <p class="card-content ellipsis2">
+                                    瑞·达利欧是全世界顶级投资家、企业家之一，对冲基金公司桥水创始人。桥水创立至今为客户赚取的收益远远超过历史上任何一家对冲基金。
+                                    达利欧认为桥水的成功源自他所奉行的一套原则，而这些原则也是他一生中学到的最重要的东西。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;1年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;542</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/互联网/不拘一格.jpg" alt="不拘一格">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">互联网</span>
+                                <span class="green"></span>
+                                <span class="card-classify">职场发展</span>
+                                <p class="card-title">不拘一格</p>
+                                <p class="card-content ellipsis2">
+                                    网飞，一家市值超2000亿美元，全球付费订阅用户超1.9亿，业务版图遍布近200个国家和地区的商业巨头。
+                                    作为创始人兼 CEO，里德·哈斯廷斯引领网飞实现了成功转型和强势增长，并坦言这得益于一套违反直觉的管理原则：
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;1年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;236</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/互联网/乔布斯传.jpg" alt="乔布斯传">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">互联网</span>
+                                <span class="green"></span>
+                                <span class="card-classify"></span>
+                                <p class="card-title">乔布斯传</p>
+                                <p class="card-content ellipsis2">
+                                    这本乔布斯唯一授权的官方传记，在2011年上半年由美国出版商西蒙舒斯特对外发布出版消息以来，备受全球媒体和业界瞩目，
+                                    这本书的全球出版日期最终确定为2011年11月21日，简体中文版也将同步上市。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;1年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;605</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/互联网/浪潮之巅1.jpg" alt="浪潮之巅">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">互联网</span>
+                                <span class="green"></span>
+                                <span class="card-classify">社科新知</span>
+                                <p class="card-title">浪潮之巅</p>
+                                <p class="card-content ellipsis2">
+                                    这不只是一部科技产业发展历史集……
+                                    更是在这个智能时代，一部IT人非读不可，而非IT人也应该阅读的作品。
+                                    一个企业的发展与崛起，绝非只是空有领导强人即可达成。任何的决策、同期的商业环境、各种能量的此消彼长，也在影响着企业的兴衰。《浪潮之巅》不只是一部历史书
+                                    ，除了讲 述 科技顶尖企业的发展规律， 对于华尔街如何左右科技公司，以及金融风暴对科技产业的冲击，也多有着墨。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;185</span>
                             </div>
                         </li>
                     </ul>
@@ -703,22 +841,84 @@
                     <ul>
                         <li class="recommend-card">
                             <div class="card-img">
-                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <img src="./images/recommend/文学经典/你当像鸟飞往你的山.jpg" alt="你当像鸟飞往你的山">
                                 <span class="iconfont icon-zhuanjibofang"></span>
                             </div>
                             <div>
                                 <span class="blue"></span>
-                                <span class="card-classify">科幻</span>
+                                <span class="card-classify">心理成长</span>
+                                <span class="green"></span>
+                                <span class="card-classify">文学经典</span>
+                                <p class="card-title">你当像鸟飞往你的山</p>
+                                <p class="card-content ellipsis2">
+                                    人们只看到我的与众不同：一个十七岁前从未踏入教室的大山女孩，却戴上一顶学历的高帽，熠熠生辉。只有我知道自己的真面目：我来自一个极少有人能想象的家庭。我的童年由垃圾场的废铜烂铁铸成，那里没有读书声，只有起重机的轰鸣。不上学，不就医，是父亲要我们坚持的忠诚与真理。父亲不允许我们拥有自己的声音，我们的意志是他眼中的恶魔。哈佛大学，剑桥大学，哲学硕士，历史博士……我知道，像我这样从垃圾堆里爬出来的无知女孩，能取得如今的成就，应当感激涕零才对。但我丝毫提不起热情。我曾怯懦、崩溃、自我怀疑，内心里有什么东西腐烂了，
+                                    恶臭熏天。直到我逃离大山，打开另一个世界。那是教育给我的新世界，那是我生命的无限可能。</p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;1年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;475</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/文学经典/斯通纳.jpg" alt="斯通纳">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">小说</span>
                                 <span class="green"></span>
                                 <span class="card-classify">视频书</span>
-                                <p class="card-title">你一生的故事</p>
-                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
-                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
-                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
-                                    还有，你的一生。</p>
+                                <p class="card-title">斯通纳</p>
+                                <p class="card-content ellipsis2">
+                                    《斯通纳》讲述了生命中最重要的部分：爱，认同，怜悯，志业，傲骨，信任与死亡。
+                                    一个勇者有过的失败不失意的人生：即使不能拥有完美的生活，所幸追求过完整的自我。
+                                </p>
                                 <span class="iconfont icon-yarn"></span>
-                                <span class="iconfont icon-time">&nbsp;6月前</span>
-                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;90</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/心理成长/最好的告别.jpg"
+                                     alt="最好的告别">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">心理成长</span>
+                                <span class="green"></span>
+                                <span class="card-classify">人文纪实</span>
+                                <p class="card-title">最好的告别</p>
+                                <p class="card-content ellipsis2">
+                                    当独立、自助的生活不能再维持时，我们该怎么办？在生命临近终点的时刻，我们该和医生谈些什么？应该如何优雅地跨越生命的终点？对于这些问题，大多数人缺少清晰的观念，而只是把命运交由医学、技术和陌生人来掌控。影响世界的医生阿图•葛文德结合其多年的外科医生经验与流畅的文笔，讲述了一个个伤感而发人深省的故事，对在21世纪变老意味着什么进行了清醒、深入的探索。本书富有洞见、感人至深，
+                                    并为我们提供了实用的路线图，告诉我们为了使生命最后的岁月有意义，我们可以做什么、应该做什么。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;208</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/文学经典/一个叫欧维的男人决定去死.png"
+                                     alt="一个叫欧维的男人决定去死">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">心理成长</span>
+                                <span class="green"></span>
+                                <span class="card-classify">文学经典</span>
+                                <p class="card-title">一个叫欧维的男人决定去死</p>
+                                <p class="card-content ellipsis2">
+                                    欧维（罗夫·拉斯加德 Rolf Lassgård
+                                    饰）是一个刻板而又固执的老头，他的妻子半年前死于疾病，留他一人生活在这个混乱不堪的世界之中。每天早晨，欧维都会定时在社区里进行巡视，确认所有的车辆都停在应停的位置，呵斥违反规定私自驶入社区的车辆，赶走四处乱转破坏环境的猫狗，
+                                    、在社区居民眼里，欧维是“来自地狱的恶邻”，可每个人都明白，这其实是欧维对于社区爱之深刻的表现。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;241</span>
                             </div>
                         </li>
                     </ul>
