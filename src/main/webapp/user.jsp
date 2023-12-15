@@ -39,7 +39,7 @@
         <div class="user-info clearfix" style="padding-bottom: 48px;">
             <div class="user-pic">
                 <div class="user-pic-bg">
-                    <img class="img" src="./images/avatar/${user.avatar}">
+                    <img class="img" src="./images/avatar/a.jpg">
                 </div>
             </div>
             <div class="user-info-right">
@@ -52,10 +52,8 @@
                 </p>
             </div>
             <div class="study-info clearfix">
-
                 <div class="item follows"><a href="${pageContext.request.contextPath}/login.jsp" class="set-btn">
                     <i class="iconfont icon-a-shezhi-shucaidanshezhi"></i>退出登录</a></div>
-
             </div>
         </div>
     </div>
@@ -94,22 +92,22 @@
             <div class="user-total" >
                 <form action="/user" method="post">
                     <a href="" class="sort-item active">个人基本信息</a>
-                    <div class="user user-info1">
-                        <label>账户名：</label>
+                    <div class="user user-info1" style="padding-top: 30px">
+                        <span style="display:inline-block;width:80px;text-align:left;color: white">用户名: </span>
                         <input type="text" value="${user.userName}" name="userName">
-                        <label>账户ID：</label>
+                        <span style="display:inline-block;width:140px;text-align:left;color: white;padding-left: 50px">uid: </span>
                         <input type="text" value="${user.userId}" name="userId">
                     </div>
                     <div class="user  user-info2">
-                        <label>姓名：</label>
+                        <span style="display:inline-block;width:80px;text-align:left;color: white">姓名: </span>
                         <input type="text" value="${user.name}" name="name">
-                        <label>邮箱：</label>
-                        <input type="text" value="${user.email}" name="email">
+                        <span style="display:inline-block;width:140px;text-align:left;color: white;padding-left: 50px">邮箱: </span>
+                        <input type="text" alue="${user.email}" name="email">
                     </div>
                     <div class="user-info3">
-                        <label>手机号：</label>
+                        <span style="display:inline-block;width:80px;text-align:left;color: white">手机号: </span>
                         <input type="text" value="${user.phone}" name="phone">
-                        <label>地址：</label>
+                        <span style="display:inline-block;width:140px;text-align:left;color: white;padding-left: 50px">地址: </span>
                         <input type="text" value="${user.address}" name="address">
                     </div>
                     <button class="user-submit">保存</button>
