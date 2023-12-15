@@ -39,7 +39,7 @@
         <div class="user-info clearfix" style="padding-bottom: 48px;">
             <div class="user-pic">
                 <div class="user-pic-bg">
-                    <img class="img" src="./images/avatar/${user.avatar}">
+                    <img class="img" src="./images/avatar/a.jpg">
                 </div>
             </div>
             <div class="user-info-right">
@@ -52,10 +52,8 @@
                 </p>
             </div>
             <div class="study-info clearfix">
-
                 <div class="item follows"><a href="${pageContext.request.contextPath}/login.jsp" class="set-btn">
                     <i class="iconfont icon-a-shezhi-shucaidanshezhi"></i>退出登录</a></div>
-
             </div>
         </div>
     </div>

@@ -85,7 +85,7 @@
             </div>
             <%--header右侧--%>
             <div class="font shop-cart">
-                <a href="#">
+                <a href="${pageContext.request.contextPath}/shoppingCart.jsp">
                     <span class="iconfont icon-gouwuche"></span>
                     <span class="cart-number">1${order.orderAmount}</span>
                 </a>
@@ -99,8 +99,8 @@
             </div>
             <%--    个人中心--%>
             <div class="font personal">
-                <a href="#">
-                    <a class="iconfont icon-shengdangerenzhongxin " href="${pageContext.request.contextPath}/user.jsp"></a>
+                <a href="${pageContext.request.contextPath}/user.jsp">
+                    <span class="iconfont icon-shengdangerenzhongxin " ></span>
                 </a>
             </div>
         </div>
