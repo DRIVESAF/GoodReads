@@ -33,10 +33,11 @@
     </div>
 </div>
 <!-- header 区域结束 -->
+<%--<hr class="line1">--%>
 
 <div class="main">
-    <div class="bg-other user-head-info">
-        <div class="user-info clearfix" style="padding-bottom: 48px;">
+    <div class=" user-head-info">
+        <div class="user-info clearfix">
             <div class="user-pic">
                 <div class="user-pic-bg">
                     <img class="img" src="./images/avatar/a.jpg">
@@ -58,7 +59,7 @@
         </div>
     </div>
 
-    <div class="wrap">
+    <div class="wrap bg-other">
         <div class="slider">
             <ul>
                 <li class="li-active">
@@ -87,12 +88,12 @@
         </div>
     </div>
 
-    <div class="u-container">
-        <div class="c-tab clearfix">
-            <div class="user-total" >
+    <div class="u-container ">
+        <div class="c-tab clearfix ">
+            <div class="user-total bg-other" >
                 <form action="/user" method="post">
                     <a href="" class="sort-item active">个人基本信息</a>
-                    <div class="user user-info1" style="padding-top: 30px">
+                    <div class="user user-info1" style="padding-top: 10px">
                         <span style="display:inline-block;width:80px;text-align:left;color: white">用户名: </span>
                         <input type="text" value="${user.userName}" name="userName">
                         <span style="display:inline-block;width:140px;text-align:left;color: white;padding-left: 50px">uid: </span>
@@ -117,7 +118,7 @@
         <div class="all-course-main">
             <div class="not-conts">
             </div>
-            <div class="recomment-body">
+            <div class="recomment-body bg-other">
                 <div>
                     <div class="title-box">
                         <span>书籍推荐</span>
