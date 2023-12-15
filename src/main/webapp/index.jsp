@@ -133,7 +133,10 @@
                                     <h3>${book.author}</h3>
                                 </div>
                                 <div class="content-right">
-                                    <span class="iconfont icon-gouwuche add_btn"></span>
+                                    <a href="shoppingCart.jsp">
+                                         <span class="iconfont icon-gouwuche add_btn">
+                                    </span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="content-bottom">
