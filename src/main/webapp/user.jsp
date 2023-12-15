@@ -16,7 +16,7 @@
     <!-- 导航栏 -->
     <div class="nav-box">
         <ul class="item-box fl">
-            <li class="nav-item" style="padding: 0 16px 0 0;"><a href="">猫猫阅读首页</a></li>
+            <li class="nav-item" style="padding: 0 16px 0 0;"><a href="${pageContext.request.contextPath}/index">猫猫阅读首页</a></li>
             <li class="nav-item"><a href="">热销书籍</a></li>
             <li class="nav-item"><a href="#">书籍分类</a></li>
             <li class="nav-item new"><a href="#">好书推荐</a></li>
@@ -39,7 +39,7 @@
         <div class="user-info clearfix" style="padding-bottom: 48px;">
             <div class="user-pic">
                 <div class="user-pic-bg">
-                    <img class="img" src="./images/me.jpg">
+                    <img class="img" src="./images/avatar/${user.avatar}">
                 </div>
             </div>
             <div class="user-info-right">
@@ -53,7 +53,7 @@
             </div>
             <div class="study-info clearfix">
 
-                <div class="item follows"><a href="" class="set-btn">
+                <div class="item follows"><a href="${pageContext.request.contextPath}/login.jsp" class="set-btn">
                     <i class="iconfont icon-a-shezhi-shucaidanshezhi"></i>退出登录</a></div>
 
             </div>
