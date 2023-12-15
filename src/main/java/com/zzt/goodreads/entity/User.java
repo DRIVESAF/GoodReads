@@ -24,5 +24,6 @@ public class User {
     private Boolean isValidate;
     private String address;
     private String phone;
+    private String avatar;
 
 }

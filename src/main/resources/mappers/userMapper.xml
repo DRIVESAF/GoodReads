@@ -20,6 +20,6 @@
 
     <update id="updateInfoByUserId" parameterType="com.zzt.goodreads.entity.User">
         UPDATE `user`
-        SET address= #{address},name= #{name} WHERE user_id = #{userId}
+        SET address= #{address},name= #{name},user_name=#{userName},phone=#{phone},email=#{email} WHERE user_id = #{userId}
     </update>
 </mapper>

@@ -100,7 +100,7 @@
             <%--    个人中心--%>
             <div class="font personal">
                 <a href="#">
-                    <a class="iconfont icon-shengdangerenzhongxin " href="${pageContext.request.contextPath}/user"></a>
+                    <a class="iconfont icon-shengdangerenzhongxin " href="${pageContext.request.contextPath}/user.jsp"></a>
                 </a>
             </div>
         </div>

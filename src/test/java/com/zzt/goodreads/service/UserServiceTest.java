@@ -16,7 +16,7 @@ class UserServiceTest {
 //    User a = new User(6,"xiaoming","123@163.com","xiaoming","123456",false,false,"翻斗花园","12345678911");
     @Test
     void login1() {
-        User user = userService.login("1111", "ww789");
+        User user = userService.login("13456783456", "11");
         System.out.println(user);
     }
     @Test
@@ -49,8 +49,11 @@ class UserServiceTest {
     @Test
     void resetUserInfo(){
         a.setAddress("翻斗花园");
-        a.setName("牛爷爷");
+        a.setName("爷爷");
         a.setUserId(10000);
+        a.setUserName("666");
+        a.setPhone("123456");
+        a.setEmail("123@qq.com");
         userService.resetUserInfo(a);
     }
 }
