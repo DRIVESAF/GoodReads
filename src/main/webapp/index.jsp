@@ -100,7 +100,8 @@
             <%--    个人中心--%>
             <div class="font personal">
                 <a href="#">
-                    <a class="iconfont icon-shengdangerenzhongxin " href="${pageContext.request.contextPath}/user.jsp"></a>
+                    <a class="iconfont icon-shengdangerenzhongxin "
+                       href="${pageContext.request.contextPath}/user.jsp"></a>
                 </a>
             </div>
         </div>
@@ -815,7 +816,7 @@
                         </li>
                         <li class="recommend-card">
                             <div class="card-img">
-                                <img src="./images/recommend/互联网/浪潮之巅1.jpg" alt="浪潮之巅">
+                                <img src="./images/recommend/互联网/浪潮之巅.jpg" alt="浪潮之巅">
                                 <span class="iconfont icon-zhuanjibofang"></span>
                             </div>
                             <div>
@@ -927,22 +928,286 @@
                     <ul>
                         <li class="recommend-card">
                             <div class="card-img">
-                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <img src="./images/recommend/社科新知/时间简史.jpg" alt="时间简史">
                                 <span class="iconfont icon-zhuanjibofang"></span>
                             </div>
                             <div>
                                 <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
                                 <span class="card-classify">科幻</span>
+                                <p class="card-title">时间简史</p>
+                                <p class="card-content ellipsis2">
+                                    《时间简史》讲述是探索时间和空间核心秘密的故事，是关于宇宙本性的最前沿知识，包括我们的宇宙图像、空间和时间、膨胀的宇宙不确定性原理、基本粒子和自然的力、
+                                    黑洞、黑洞不是这么黑、时间箭头等内容。第一版中的许多理论预言，后来在对微观或宏观宇宙世界观测中得到证实。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;1年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;311</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/最好的告别.jpg" alt="最好的告别">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">人文纪实</span>
+                                <p class="card-title">最好的告别</p>
+                                <p class="card-content ellipsis2">
+                                    当独立、自助的生活不能再维持时，我们该怎么办？在生命临近终点的时刻，我们该和医生谈些什么？
+                                    应该如何优雅地跨越生命的终点？对于这些问题，大多数人缺少清晰的观念，而只是把命运交由医学、技术和陌生人来掌控
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;209</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/道德经.jpg" alt="道德经">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
                                 <span class="green"></span>
                                 <span class="card-classify">视频书</span>
-                                <p class="card-title">你一生的故事</p>
-                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
-                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
-                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
-                                    还有，你的一生。</p>
+                                <p class="card-title">道德经</p>
+                                <p class="card-content ellipsis2">
+                                    《道德经》又称《道德真经》《老子》，分“道经”“德经”上下两篇，共八十一章。它不仅是道家（包括道教）代表作，而且还被尊为诸子之首、万经之王。
+                                </p>
                                 <span class="iconfont icon-yarn"></span>
-                                <span class="iconfont icon-time">&nbsp;6月前</span>
-                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;328</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/沉默的大多数.jpg" alt="沉默的大多数">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">文学经典</span>
+                                <p class="card-title">沉默的大多数</p>
+                                <p class="card-content ellipsis2">
+                                    这本杂文随笔集包括思想文化方面的文章，涉及知识分子的处境及思考，社会道德伦理，文化论争，国学与新儒家，民族主义等问题；包括从日常生活中发掘出来的各种真知灼见，涉及科学与邪道，女权主义等；包括对社会科学研究的评论，涉及性问题，生育问题，同性恋问题，社会研究的伦理问题和方法问题等
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;74</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/上帝掷骰子吗：量子物理史话.jpg"
+                                     alt="上帝掷骰子吗：量子物理史话">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">上帝掷骰子吗：量子物理史话</p>
+                                <p class="card-content ellipsis2">
+                                    《上帝掷骰子吗》这本书是关于量子论的故事。量子论是一个极为奇妙的理论：从物理角度来说，它在科学家中间引起了最为激烈的争议和关注；
+                                    从现实角度来说，它给我们的社会带来了无与伦比的变化和进步；从科学史角度来说，也几乎没有哪段历史比量子论的创立得到了更为彻底的研究。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;102</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/史记.jpg" alt="史记">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">人文纪实</span>
+                                <p class="card-title">史记</p>
+                                <p class="card-content ellipsis2">
+                                    《史记》是我国第一部通史，是“二十四史”中最早的一部，也是最重要的一部史书。全书共一百三十篇。《史记》叙事，始自黄帝，下迄西汉太初，采用了综合性的叙事模式，囊括记言、纪事、编年、
+                                    国别等形式，开创纪传体史书“纪、传、表、志”的体例。就内容而言，《史记》是对前代史学的一次总结；就体例而言，《史记》也是集大成之作。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;132</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/朝花夕拾.jpg" alt="朝花夕拾">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">朝花夕拾</p>
+                                <p class="card-content ellipsis2">
+                                    本书收作者1926年所作回忆散文十篇。1928年9月由北平未名社初版，列为作者所编的《未名新集》之一。
+                                    1932年8月改由上海北新书局出版。作者生前共印行七版次。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;43</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/艺术的故事.jpg" alt="艺术的故事">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">文学经典</span>
+                                <p class="card-title">艺术的故事</p>
+                                <p class="card-content ellipsis2">
+                                    《艺术的故事》概括地叙述了从最早的洞窟绘画到当今的实验艺术的发展历程，以阐明艺术史是“各种传统不断迂回、不断改变的历史，每一件作品在这历史中都既回顾过去又导向未来。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;67</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/乡土中国.jpg" alt="乡土中国">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">乡土中国</p>
+                                <p class="card-content ellipsis2">
+                                    豆瓣评分：9.2
+
+                                    作者：费孝通
+
+                                    著名社会学家费孝通教授，一生行行重行行，实地调查和考察总结中国农村经济发展的各种模式，写下了诸多不朽篇章。本书推出的是学界共认的中国乡土社会传统文化和社会结构理论研究的代表作《乡土中国》、《生育制度》、《乡土重建》和《皇权与绅权》四篇著作，可供社会学工作或教学、研究者参考。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;90</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/万历十五年.jpg" alt="万历十五年">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">人文纪实</span>
+                                <p class="card-title">万历十五年</p>
+                                <p class="card-content ellipsis2">
+                                    万历十五年，亦即公元1587年，在西欧历史上为西班牙舰队全部出动征英的前一年；而在中国，这平平淡淡的一年中，发生了若干为历史学家所易于忽视的事件。这些事件，表面看来虽似末端小节，但实质上却是以前发生大事的症结，也是将在以后掀起波澜的机缘。在历史学家黄仁宇的眼中，其间的关系因果，恰为历史的重点，而我们的大历史之旅，也自此开始……
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;152</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/人类简史.jpg" alt="人类简史">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">人类简史</p>
+                                <p class="card-content ellipsis2">
+                                    十万年前，地球上至少有六种不同的人
+                                    但今日，世界舞台为什么只剩下了我们自己？
+                                    从只能啃食虎狼吃剩的残骨的猿人，到跃居食物链顶端的智人，
+                                    从雪维洞穴壁上的原始人手印，到阿姆斯壮踩上月球的脚印，
+                                    从认知革命、农业革命，到科学革命、生物科技革命，
+                                    我们如何登上世界舞台成为万物之灵的？
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;126</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/明朝那些事儿.jpg" alt="明朝那些事儿">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">明朝那些事儿</p>
+                                <p class="card-content ellipsis2">
+                                    《明朝那些事儿》这篇文主要讲述的是从1344年到1644年这三百年间关于明朝的一些事情，以史料为基础，以年代和具体人物为主线，并加入了小说的笔法，对明朝十七帝和其他王公权贵和小人物的命运进行全景展示，尤其对官场政治、战争、帝王心术着墨最多，并加入对当时政治经济制度、人伦道德的演义。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;165</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/历史深处的忧虑.jpg" alt="历史深处的忧虑">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">人文纪实</span>
+                                <p class="card-title">历史深处的忧虑</p>
+                                <p class="card-content ellipsis2">
+                                    美国的面积和中国差不多。和大多数留学生及新移民一样，当我们一脚踏上这块广袤的陌生土地时，最初落脚点的选择是十分偶然的。我们落在了一个普通的地方，居住的环境平常而宁静。
+                                    周围的美国人老老少少都在辛勤劳作，过着普通得不能再普通的生活。要想谋出一番好的光景，对他们也不是一件轻而易举的事情。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;85</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/社科新知/寻路中国.jpg" alt="寻路中国">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">社科新知</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">寻路中国</p>
+                                <p class="card-content ellipsis2">
+                                    我叫彼得·海斯勒，是《纽约客》驻北京记者。这本书讲述了我驾车漫游中国大陆的经历。
+                                    2001年夏天，我考取了中国驾照，在此后的七年中，我驾车漫游于中国的乡村与城市。这七年也正是中国汽车业的高速发展期，单在北京一地，每天申领驾照的新人就有一千多，
+                                    其中有好几年，乘用车销售额的年增长率超过了百分之五十。仅仅两年多的时间，中国政府在乡村所铺设的公路里程数，就超过了此前半个世纪的总量。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;51</span>
                             </div>
                         </li>
                     </ul>
@@ -951,22 +1216,201 @@
                     <ul>
                         <li class="recommend-card">
                             <div class="card-img">
-                                <img src="./images/recommend/最新/你一生的故事.jpg" alt="你一生的故事">
+                                <img src="./images/recommend/职场发展/定位.jpg" alt="定位">
                                 <span class="iconfont icon-zhuanjibofang"></span>
                             </div>
                             <div>
                                 <span class="blue"></span>
-                                <span class="card-classify">科幻</span>
+                                <span class="card-classify">互联网</span>
                                 <span class="green"></span>
-                                <span class="card-classify">视频书</span>
-                                <p class="card-title">你一生的故事</p>
-                                <p class="card-content ellipsis2">一瞥之下，过去与未来轰轰然同时并至，
-                                    我的意识成为长达半个世纪的灰烬，时间未至已成灰。
-                                    五十年诸般纷纭并发眼底，我的余生尽在其中。
-                                    还有，你的一生。</p>
+                                <span class="card-classify">职场发展</span>
+                                <p class="card-title">定位</p>
+                                <p class="card-content ellipsis2">20多年前，美国《广告时代》杂志约请年轻的营销专家里斯和特劳特撰写一系列有关营销和广告新思维的文章，总标题就是“定位的时代”。系列文章刊载之后，引起全行业的轰动，定位成了营销界人人谈论的热闹话题，经作者之手送出的文章就达12万份之多，由此开创了营销理论全面创新的时代。</p>
                                 <span class="iconfont icon-yarn"></span>
                                 <span class="iconfont icon-time">&nbsp;6月前</span>
-                                <span class="iconfont icon-yanjing1">&nbsp;446</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;200</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/苏世民：我的经验与教训.jpg" alt="">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">苏世民：我的经验与教训</p>
+                                <p class="card-content ellipsis2">
+                                    这是一部投资、管理类图书，是一部关于成功创业的书，还是一部处世哲学。
+                                    苏世民创立的黑石集团是全球私募股权资产管理公司和房地产管理公司的巨头。截至2019年第三季度，黑石管理的资金总额超过5500亿美元。
+                                    黑石集团人均利润是高盛的9倍，过去30余年平均回报率高达30%以上。美国排名前50的公司和养老基金中，70%以上都有黑石的投资。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;12月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;274</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/基业长青.jpg" alt="基业长青">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">基业长青</p>
+                                <p class="card-content ellipsis2">
+                                    如何建立一个伟大且长盛不衰的公司？有思想的人们早已经厌倦了“年度流行语”般稍纵即逝的管理概念，他们渴望获得能够经受时间考验的管理思想。
+                                    正如柯林斯和波勒斯所写：“这不是一本描写能力卓越、高瞻远瞩的领导人的书，也与高瞻远瞩的产品概念、高瞻远瞩的产品或高瞻远瞩的市场分析无关，甚至不谈及拥有某种公司展望。这本书所谈的问题更为重要、长久和真实。这是一本有关高瞻远瞩公司的书。”
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;12月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;134</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/奈飞文化手册.jpg" alt="奈飞文化手册">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">奈飞文化手册</p>
+                                <p class="card-content ellipsis2">
+                                    一本对奈飞文化进行深入解读的力作。2009年，奈飞公开发布了一份介绍企业文化的PPT文件，在网上累计下载量超过1500万次，
+                                    被Facebook的CFO谢丽尔·桑德伯格称为“硅谷重要文件”。本书是奈飞前CHO，PPT的主要创作者之一帕蒂·麦考德对这份PPT文件的深度解读。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;12月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;111</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/掌控习惯.jpg" alt="掌控习惯">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">掌控习惯</p>
+                                <p class="card-content ellipsis2">
+                                    为什么“习惯改变命运”？因为个人40%~50%的行为取决于无意识的习惯。
+                                    习惯形成需要4步：提示→渴求→反应→奖赏。提示触发渴求，渴求激发反应，而反应则提供满足渴求的奖赏，并最终与提示相关联。这4个步骤一起形成了一个神经反馈回路——提示、渴求、反应、奖赏；提示、渴求、反应、奖赏——并最终让你养成自然而然的习惯，由此构成完整的习惯循环。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;12月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;199</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/影响力.jpg" alt="影响力">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">影响力</p>
+                                <p class="card-content ellipsis2">
+                                    自出版以来，《影响力》就一直是畅销佳作。由于它的影响，说服得以成为一门科学。无论你是普通人还是为某一产品或事业观点游说的人，这都是一本基本的必读书，是你理解他人心理的基石。
+                                    心理学家罗伯特·西奥迪尼为我们解释了为什么有些人具有说服力，而我们总是容易上当受骗。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;12月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;241</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/卓有成效的管理者.jpg" alt="卓有成效的管理者">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">卓有成效的管理者</p>
+                                <p class="card-content ellipsis2">
+                                    “现代管理学之父”彼得·德鲁克提出，在知识社会中“管理者”的全新定义——
+                                    “每一个愿意凭借专业、积极贡献、勇于担当责任的人都是管理者，即使他没有所谓的职权，
+                                    只要他能为组织做出贡献。所有负责行动和决策而又有助于提高组织工作效能的人，都要像管理者一样工作和思考。”
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;12月前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;122</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/金字塔原理.jpg" alt="金字塔原理">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">
+                                    视频书
+                                </span>
+                                <p class="card-title">金字塔原理</p>
+                                <p class="card-content ellipsis2">
+                                    《金字塔原理》介绍了一种能清晰地展现思路的高效方法，是训练思考、使表达呈现逻辑性的实用宝典。金字塔原理能将零散的观点有序组织起来，化繁为简，适合所有需要精进思考、分析、表达能力的读者。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;1年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;543</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/不拘一格.jpg" alt="不拘一格">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">互联网</span>
+                                <p class="card-title">不拘一格</p>
+                                <p class="card-content ellipsis2">
+                                    网飞，一家市值超2000亿美元，全球付费订阅用户超1.9亿，业务版图遍布近200个国家和地区的商业巨头。
+                                    作为创始人兼 CEO，里德·哈斯廷斯引领网飞实现了成功转型和强势增长，并坦言这得益于一套违反直觉的管理原则：
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;1年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;237</span>
+                            </div>
+                        </li>
+                        <li class="recommend-card">
+                            <div class="card-img">
+                                <img src="./images/recommend/职场发展/高效能人士的7个习惯.jpg" alt="高效能人士的7个习惯">
+                                <span class="iconfont icon-zhuanjibofang"></span>
+                            </div>
+                            <div>
+                                <span class="blue"></span>
+                                <span class="card-classify">职场发展</span>
+                                <span class="green"></span>
+                                <span class="card-classify">视频书</span>
+                                <p class="card-title">高效能人士的7个习惯</p>
+                                <p class="card-content ellipsis2">
+                                    “以终为始”的一个原则基础是“任何事都是两次创造而成”。 我们做任何事都是先在头脑中构思，即智力上的或第一次的创造( Mental/First Creation)，然后付诸实践，即体力上的或第二次的创造( Physical/Second Creation). 以终为始的原则适用范围极广。明白了两次创造的道理，把制定目标看得与实践本身同样重要，影响圈就会日益扩大，反之就会日益缩小。 换句话说，习惯一谈的是“你是创造者”，习惯二谈的是“第一次创造”。
+                                </p>
+                                <span class="iconfont icon-yarn"></span>
+                                <span class="iconfont icon-time">&nbsp;2年前</span>
+                                <span class="iconfont icon-yanjing1">&nbsp;332</span>
                             </div>
                         </li>
                     </ul>

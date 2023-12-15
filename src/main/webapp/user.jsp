@@ -17,9 +17,9 @@
     <div class="nav-box">
         <ul class="item-box fl">
             <li class="nav-item" style="padding: 0 16px 0 0;"><a href="${pageContext.request.contextPath}/index">猫猫阅读首页</a></li>
-            <li class="nav-item"><a href="">热销书籍</a></li>
-            <li class="nav-item"><a href="#">书籍分类</a></li>
-            <li class="nav-item new"><a href="#">好书推荐</a></li>
+            <li class="nav-item"><a href="index.jsp#hot">热销书籍</a></li>
+            <li class="nav-item"><a href="index.jsp#classify">书籍分类</a></li>
+            <li class="nav-item new"><a href="index.jsp#recommend">好书推荐</a></li>
         </ul>
 
         <div class="search fl">
