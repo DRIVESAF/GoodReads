@@ -56,7 +56,7 @@
 
                     <li>
                         <span class="iconfont icon-dingdan"></span>
-                        <a href="index.jsp#order">我的订单</a>
+                        <a href="shoppingCart.jsp">我的订单</a>
                     </li>
                     <li>
                         <span class="iconfont icon-shoucang"></span>
@@ -1419,11 +1419,11 @@
             </div>
 
             <%--    我的订单开始--%>
-            <div class="order section" id="order">
-                <a href="#">
-                    <img src="./images/我的订单.png" alt="我的订单" class="order-title">
-                </a>
-            </div>
+<%--            <div class="order section" id="order">--%>
+<%--                <a href="#">--%>
+<%--                    <img src="./images/我的订单.png" alt="我的订单" class="order-title">--%>
+<%--                </a>--%>
+<%--            </div>--%>
             <%--    我的订单结束--%>
         </div>
     </div>

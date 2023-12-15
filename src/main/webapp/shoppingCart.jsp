@@ -10,7 +10,6 @@
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/help-center.css" />
     <title>我的购物车</title>
     <style>
         * {
