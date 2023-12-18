@@ -18,7 +18,7 @@ class BookServiceTest {
     private final BookService bookService= new BookService();
     @Test
     void selectByBookName() {
-        book = bookService.selectByBookName("教");
+        book = bookService.selectByBookName("教父");
         System.out.println(book);
     }
 
@@ -38,6 +38,7 @@ class BookServiceTest {
 
     @Test
     void delete(){
-        bookService.delete("母猪的产后护理");
+        book.setBookName("母猪的产后护理");
+        bookService.delete(book);
     }
 }

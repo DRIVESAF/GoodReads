@@ -37,9 +37,6 @@ public class RegisterServlet extends HttpServlet {
         String password = request.getParameter("password");
         String userName = request.getParameter("userName");
         String email = request.getParameter("email");
-        if(userName==null){
-            userName = phone;
-        }
         user.setPhone(phone);
         user.setPassword(password);
         user.setUserName(userName);
@@ -55,7 +52,6 @@ public class RegisterServlet extends HttpServlet {
             response.sendRedirect("/index");
         } catch (Exception e) {
             e.printStackTrace();
-
             resp = new ResponseUtils(e.getClass().getSimpleName(), e.getMessage());
         }
         // 返回JSON结果

@@ -18,10 +18,10 @@
         VALUES (#{bookId},#{bookName},#{author},#{bookCover},#{bookPrice},#{collect},#{comment},#{browse},#{bookIntro},#{bookType},#{bookType})
     </insert>
 
-    <update id="delete" parameterType="String">
+    <update id="delete" parameterType="com.zzt.goodreads.entity.Book">
         DELETE
         FROM book
-        WHERE book_name = #{value}
+        WHERE book_name = #{bookName}
     </update>
 
 

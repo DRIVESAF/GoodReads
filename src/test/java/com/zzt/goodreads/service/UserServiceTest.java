@@ -1,7 +1,10 @@
 package com.zzt.goodreads.service;
 
+import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.entity.User;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
 
 
 /**
@@ -55,5 +58,11 @@ class UserServiceTest {
         a.setPhone("123456");
         a.setEmail("123@qq.com");
         userService.resetUserInfo(a);
+    }
+
+    @Test
+    void selectAll(){
+        List<User> users = userService.selectAll();
+        System.out.println(users);
     }
 }
