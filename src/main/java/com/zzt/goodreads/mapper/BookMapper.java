@@ -17,6 +17,6 @@ public interface BookMapper {
 
    void insert(Book book);
 
-   void delete(String bookName);
+   void delete(Book book);
 
 }

@@ -6,5 +6,5 @@ package com.zzt.goodreads.mapper;
  * @Description
  */
 
-public interface AdminMapper {
+public interface AdminMapper{
 }

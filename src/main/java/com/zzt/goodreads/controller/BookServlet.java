@@ -1,12 +1,15 @@
 package com.zzt.goodreads.controller;
 
+import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.service.BookService;
 import com.zzt.goodreads.utils.ResponseUtils;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -17,15 +20,15 @@ import java.io.IOException;
  * @Author zhy
  * @Date 2023/12/11 8:23
  */
-@WebServlet("/book/*")
+@WebServlet("/book")
 @Slf4j
 public class BookServlet extends HttpServlet {
 
-    private BookService bookService = new BookService();
+    private BookService bookService;
 
-
-    public BookServlet() {
-        log.info("init");
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        bookService = new BookService();
     }
 
     @Override
@@ -36,30 +39,20 @@ public class BookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String requestURI = req.getRequestURI();
-        log.info(requestURI);
-        int position = requestURI.lastIndexOf("/");
-//        author/list
-        String method = requestURI.substring(position + 1);
-        log.info(method);
-        switch (method) {
-            case "list" -> {
-                selectList(req, resp);
-            }
+        String bookName = req.getParameter("bookName");
+        resp.setContentType("text/html:charset=UTF-8");
+        resp.setCharacterEncoding("UTF-8");
+        ResponseUtils respU = new ResponseUtils();
+        try {
+            Book book =bookService.selectByBookName(bookName);
+            HttpSession session = req.getSession();
+            session.setAttribute("book",book);
+            req.getRequestDispatcher("manage.jsp").forward(req,resp);
+        } catch (Exception e) {
+            e.printStackTrace();
+            respU = new ResponseUtils(e.getClass().getSimpleName(), e.getMessage());
         }
-    }
-
-    private void selectList(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ResponseUtils responseUtils;
-//        List<Book> books = bookService.selectAll();
-//        responseUtils = new ResponseUtils().put("list", books);
-        resp.setContentType("application/json;charset=UTF-8");
-//        resp.getWriter().println(responseUtils.toJsonString());
-//        resp.addHeader("Accept-Ranges","bytes");
-    }
-
-    @Override
-    public void destroy() {
-        log.info("destroy");
+        // 返回JSON结果
+        resp.getWriter().println(respU.toJsonString());
     }
 }

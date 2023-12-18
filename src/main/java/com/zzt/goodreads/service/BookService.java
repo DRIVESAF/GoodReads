@@ -43,11 +43,11 @@ public class BookService {
          });
     }
 
-    public void delete(String bookName){
+    public void delete(Book book){
         MyBatisUtils.executeUpdate(sqlSession -> {
             BookMapper mapper = sqlSession.getMapper(BookMapper.class);
-            mapper.delete(bookName);
-            return bookName;
+            mapper.delete(book);
+            return book;
         });
     }
     /*
