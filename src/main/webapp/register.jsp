@@ -43,7 +43,7 @@
                 <button>注 册</button>
             </a>
 
-            <a href="./login.html">
+            <a href="./login.jsp">
                 <span></span>
                 <span></span>
                 <span></span>

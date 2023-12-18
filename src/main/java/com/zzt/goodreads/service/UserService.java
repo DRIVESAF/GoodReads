@@ -1,5 +1,6 @@
 package com.zzt.goodreads.service;
 
+import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.entity.User;
 import com.zzt.goodreads.mapper.BookMapper;
 import com.zzt.goodreads.mapper.UserMapper;
@@ -9,6 +10,7 @@ import com.zzt.goodreads.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
 
 
 /**
@@ -68,6 +70,14 @@ public class UserService {
             UserMapper mapper = sqlSession.getMapper(UserMapper.class);
             mapper.updateInfoByUserId(user);
             return user;
+        });
+    }
+
+    public List<User> selectAll(){
+
+        return (List<User>) MyBatisUtils.executeQuery(sqlSession -> {
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            return mapper.selectAll();
         });
     }
 

@@ -122,7 +122,7 @@
                 <div>
                     <div class="title-box">
                         <span>书籍推荐</span>
-                        <a href="#" class="more">
+                        <a href="index.jsp#recommend" class="more">
                             查看更多>>
                         </a>
                     </div>

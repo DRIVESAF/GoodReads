@@ -191,12 +191,12 @@
         .car .check i {
             color: #fff;
             display: inline-block;
-
             width: 18px;
             height: 18px;
             line-height: 18px;
             border: 1px solid #000000;
-            margin-left: 24px;
+            margin-left: 20px;
+            margin-top: 27px;
             background-color: #E0E0E0;
             font-size: 16px;
             text-align: center;

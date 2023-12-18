@@ -22,4 +22,9 @@
         UPDATE `user`
         SET address= #{address},name= #{name},user_name=#{userName},phone=#{phone},email=#{email} WHERE user_id = #{userId}
     </update>
+
+    <select id="selectAll" resultType="com.zzt.goodreads.entity.User">
+        SELECT *
+        FROM user
+    </select>
 </mapper>
