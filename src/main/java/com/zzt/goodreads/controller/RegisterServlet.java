@@ -17,10 +17,12 @@ import java.io.IOException;
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
     private UserService userService;
+    private User user;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         userService = new UserService();
+        user = new User();
     }
 
     @Override
@@ -35,7 +37,9 @@ public class RegisterServlet extends HttpServlet {
         String password = request.getParameter("password");
         String userName = request.getParameter("userName");
         String email = request.getParameter("email");
-        User user = new User();
+        if(userName==null){
+            userName = phone;
+        }
         user.setPhone(phone);
         user.setPassword(password);
         user.setUserName(userName);
