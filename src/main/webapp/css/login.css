@@ -78,7 +78,8 @@ html {
 .login-box form a button{
     border: none;
     background-color: rgb(0,0,0,0);
-    color: white;
+    color: #03e9f4;
+    font-size: 16px;
 }
 
 
