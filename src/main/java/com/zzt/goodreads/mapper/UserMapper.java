@@ -1,6 +1,9 @@
 package com.zzt.goodreads.mapper;
 
+import com.zzt.goodreads.entity.Book;
 import com.zzt.goodreads.entity.User;
+
+import java.util.List;
 
 /**
  * @Author ctynt
@@ -16,4 +19,6 @@ public interface UserMapper {
     void updatePasswordByUserId(User user);
 
     void updateInfoByUserId(User user);
+
+    List <User> selectAll();
 }
