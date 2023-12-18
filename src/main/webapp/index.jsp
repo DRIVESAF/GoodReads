@@ -66,6 +66,10 @@
                         <span class="iconfont icon-guanzhu"></span>
                         <a href="#">我的关注</a>
                     </li>
+                    <li>
+                        <span class="iconfont icon-kucun"></span>
+                        <a href="manage.html">后台管理</a>
+                    </li>
                 </ul>
             </div>
             <%--            左侧导航栏结束--%>
