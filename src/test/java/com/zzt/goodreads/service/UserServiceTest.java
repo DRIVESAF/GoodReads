@@ -32,7 +32,7 @@ class UserServiceTest {
     }
     @Test
     void add(){
-        a.setUserName("hhh");
+        a.setUserName("h");
         a.setEmail("123@121");
         a.setPhone("12345678911");
         a.setPassword("123456");
@@ -41,7 +41,7 @@ class UserServiceTest {
 
     @Test
     void resetPassword() {
-        a.setUserId(10000);
+        a.setUserId(1000);
         a.setPassword("10000");
         userService.resetPassword(a);
     }

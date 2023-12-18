@@ -22,19 +22,19 @@
             <label>密码</label>
         </div>
         <div class="log">
-            <a href="${pageContext.request.contextPath}/index">
+            <a href="">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <button>登 录</button>
             </a>
-            <a href="${pageContext.request.contextPath}/register">
+            <a href="${pageContext.request.contextPath}/register.jsp">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                <button>注 册</button>
+                注册
             </a>
         </div>
     </form>
