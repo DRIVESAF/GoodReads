@@ -442,7 +442,9 @@
         </div>
     </div>
     <div id="sum_area">
-        <div id="pay">去结算</div>
+        <a href="payment.jsp">
+            <div id="pay">去结算</div>
+        </a>
         <div id="pay_amout">合计：<span id="price_num">0</span>元</div>
     </div>
     <div id="box">
