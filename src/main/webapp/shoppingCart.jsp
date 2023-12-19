@@ -657,7 +657,20 @@
             sum += num;
             document.getElementById("price_num").innerText = sum;
         }
+
+
     }
+
+
+        function showPopup(){
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "block";
+    }
+        function hidePopup(){
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
+    }
+
 
 </script>
 </html>
