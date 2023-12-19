@@ -65,4 +65,10 @@ class UserServiceTest {
         List<User> users = userService.selectAll();
         System.out.println(users);
     }
+
+    @Test
+    void delete() {
+        a.setPhone("22");
+        userService.delete(a);
+    }
 }

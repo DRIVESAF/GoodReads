@@ -27,4 +27,10 @@
         SELECT *
         FROM user
     </select>
+
+    <delete id="delete" parameterType="com.zzt.goodreads.entity.User">
+        DELETE
+        FROM user
+        WHERE phone = #{phone}
+    </delete>
 </mapper>

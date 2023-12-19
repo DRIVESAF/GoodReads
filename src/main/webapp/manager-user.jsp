@@ -1,21 +1,21 @@
-<%@ page import="com.zzt.goodreads.service.BookService" %>
-<%@ page import="com.zzt.goodreads.entity.Book" %>
+<%@ page import="com.zzt.goodreads.service.UserService" %>
+<%@ page import="com.zzt.goodreads.entity.User" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <html>
 <head>
-    <title>管理员首页-图书管理</title>
+    <title>管理员首页-用户管理</title>
     <link rel="stylesheet" href="css/manage.css">
 </head>
 
 <body class="w">
-<form action="/book">
+<form action="/userManage">
     <div class="nav">
         <h3 class="title">
-            <a href="javascript:" class="active">书籍管理</a>
-            <a href="manager-user.jsp">用户管理</a>
+            <a href="manage.jsp">书籍管理</a>
+            <a href="javascript:" class="active">用户管理</a>
             <a href="javascript:">书籍分类管理</a>
             <a href="javascript:">订单管理</a>
         </h3>
@@ -25,11 +25,11 @@
     <div class="search">
 
         <div class="author">
-            <input placeholder="作者">
+            <input placeholder="用户名">
         </div>
 
         <div class="bookName">
-            <input placeholder="书名" name="bookName">
+            <input placeholder="手机号" name="phone">
         </div>
         <button>查询</button>
         <input type="button" value="删除" class="del">
@@ -46,69 +46,79 @@
         <thead>
         <tr>
             <th>编号</th>
-            <th>作者</th>
-            <th>书名</th>
-            <th>价格</th>
-            <th>书籍类型</th>
-            <th>库存</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>姓名</th>
+            <th>邮箱</th>
+            <th>手机号</th>
+            <th>地址</th>
+            <th>是否为管理员</th>
         </tr>
-
-
         </thead>
         <tbody id="tbMain">
         <%
-            BookService bookService = new BookService();
-            Book book = (Book) request.getSession().getAttribute("book");
-            request.setAttribute("book", book);
+            UserService userService = new UserService();
+            User user= (User) request.getSession().getAttribute("user");
+            request.setAttribute("user", user);
 
-            List<Book> books = bookService.selectAll();
-            request.setAttribute("books", books);
+            List<User> users = userService.selectAll();
+            request.setAttribute("users", users);
         %>
-        <% if(book == null) { %>
-        <c:forEach items="${books}" var="book">
+        <% if(user == null) { %>
+        <c:forEach items="${users}" var="user">
             <tr class="a">
                 <td>
-                        ${book.bookId}
+                        ${user.userId}
                 </td>
                 <td>
-                        ${book.author}
+                        ${user.userName}
                 </td>
                 <td>
-                        ${book.bookName}
+                        ${user.password}
                 </td>
                 <td>
-                        ${book.bookPrice}
+                        ${user.name}
                 </td>
                 <td>
-                        ${book.bookType}
+                        ${user.email}
                 </td>
                 <td>
-                        ${book.bookStork}
+                        ${user.phone}
                 </td>
-
+                <td>
+                        ${user.address}
+                </td>
+                <td>
+                        ${user.isAdmin}
+                </td>
             </tr>
         </c:forEach>
         <%} else {%>
         <tr class="b">
             <td>
-                ${book.bookId}
+                ${user.userId}
             </td>
             <td>
-                ${book.author}
+                ${user.userName}
             </td>
             <td>
-                ${book.bookName}
+                ${user.password}
             </td>
             <td>
-                ${book.bookPrice}
+                ${user.name}
             </td>
             <td>
-                ${book.bookType}
+                ${user.email}
             </td>
             <td>
-                ${book.bookStork}
+                ${user.phone}
             </td>
-
+            <td>
+                ${user.address}
+            </td>
+            <td>
+                ${user.isAdmin}
+            </td>
         </tr>
         <%} %>
         </tbody>
@@ -122,10 +132,9 @@
     var b = document.getElementsByClassName("b")
     window.onload = function () {
         btnDel.οnclick = function () {
-           <%
-             bookService.delete(book);
-           %>
-
+            <%
+                userService.delete(user);
+            %>
         }
     }
 </script>

@@ -81,4 +81,18 @@ public class UserService {
         });
     }
 
+    public User select(String phone) {
+        return (User) MyBatisUtils.executeQuery(sqlSession -> {
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            return mapper.selectByUserPhone(phone);
+        });
+    }
+
+    public void delete(User user){
+        MyBatisUtils.executeUpdate(sqlSession -> {
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            mapper.delete(user);
+            return user;
+        });
+    }
 }
