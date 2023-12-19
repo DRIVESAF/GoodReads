@@ -42,7 +42,6 @@
     <div id="overlay">
         <div class="popup">
             <p class="popup_title">添加用户</p>
-            <p class="popup_content">
             <div class="container">
                 <form action="${pageContext.request.contextPath}/addUserServlet" method="post">
                     <div class="form-group">
@@ -78,7 +77,6 @@
                     </div>
                 </form>
             </div>
-            </p>
             <div class="popup_btn">
                 <input class="cancelBtn" onclick="hidePopup()" type="button" value="取消">
                 <input class="confirmBtn" onclick="hidePopup()" type="button" value="确认">

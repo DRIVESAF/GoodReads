@@ -14,39 +14,49 @@
 }
 /* 弹出框主体 */
 .popup {
+    padding: 0;
     background-color: #ffffff;
     max-width: 400px;
     min-width: 200px;
-    height: 240px;
-    border-radius: 5px;
-    margin: 100px auto;
+    height: 470px;
+    border-radius: 8px;
+    margin: 50px auto;
     text-align: center;
 }
 /* 弹出框的标题 */
 .popup_title {
-    height: 60px;
-    line-height: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    height: 35px;
+    line-height: 35px;
     border-bottom: solid 1px #cccccc;
+    padding: 5px 0;
 }
-/* 弹出框的内容 */
-.popup_content {
-    height: 50px;
-    line-height: 50px;
-    padding: 15px 20px;
-}
-/* 弹出框的按钮栏 */
-.popup_btn {
-    padding-bottom: 10px;
+.container{
+    margin-top: -15px;
 }
 /* 弹出框的按钮 */
-.popup_btn button {
-    color: #778899;
-    width: 40%;
-    height: 40px;
+.popup_btn input {
+    width:55px ;
+    height: 30px;
     cursor: pointer;
     border: solid 1px #cccccc;
     border-radius: 5px;
-    margin: 5px 10px;
+    margin: -5px 10px 0;
     color: #ffffff;
     background-color: #337ab7;
+    padding: 0;
+
+}
+.form-group .btn{
+    width:55px ;
+    height: 30px;
+    cursor: pointer;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #337ab7;
+    padding: 0;
+    margin: 0 10px;
+
 }
