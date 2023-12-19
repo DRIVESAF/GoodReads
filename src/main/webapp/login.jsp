@@ -14,11 +14,11 @@
     <h2><img src="images/GoodReads.png"></h2>
     <form action="/login" method="post">
         <div class="user-box">
-            <input type="text" name="phone" required="">
+            <input type="text" name="phone" required>
             <label>手机号</label>
         </div>
         <div class="user-box">
-            <input type="password" name="password" required="">
+            <input type="password" name="password" required>
             <label>密码</label>
         </div>
         <div class="log">
@@ -39,6 +39,12 @@
         </div>
     </form>
 </div>
+<%--<script>--%>
+<%--    var errori = '<%=request.getParameter("error")%>';--%>
+<%--    if(errori='yes'){--%>
+<%--        alert("登录失败！")--%>
+<%--    }--%>
+<%--</script>--%>
 </body>
 
 </html>

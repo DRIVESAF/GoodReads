@@ -8,6 +8,7 @@
 <head>
     <title>管理员首页-图书管理</title>
     <link rel="stylesheet" href="css/manage.css">
+    <link rel="stylesheet" href="css/pull.css">
 </head>
 
 <body class="w">
@@ -37,8 +38,52 @@
 
     <!--按钮-->
 
-    <div class="opr">
-        <input class="add" type="button" value="新增">
+    <input id="show-Popup" onclick="showPopup()" type="button" value="新增">
+    <div id="overlay">
+        <div class="popup">
+            <p class="popup_title">添加用户</p>
+            <p class="popup_content">
+            <div class="container">
+                <form action="${pageContext.request.contextPath}/addUserServlet" method="post">
+                    <div class="form-group">
+                        <label for="name">用户名：</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uid">年龄：</label>
+                        <input type="text" class="form-control" id="uid" name="uid" placeholder="请输入年龄">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">手机号：</label>
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="请输入手机号"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">邮箱：</label>
+                        <input type="text" class="form-control" name="email"  id="email" placeholder="请输入邮箱地址"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label >是否为管理员：</label>
+                        <input type="radio" name="true" value="true" checked="checked"/>是
+                        <input type="radio" name="false" value="false" />否
+                    </div>
+
+                    <div class="form-group" style="text-align: center">
+                        <input class="btn btn-primary" type="submit" value="提交" />
+                        <input class="btn btn-default" type="reset" value="重置" />
+                        <input class="btn btn-default" type="button" value="返回" />
+                    </div>
+                </form>
+            </div>
+            </p>
+            <div class="popup_btn">
+                <input class="cancelBtn" onclick="hidePopup()" type="button" value="取消">
+                <input class="confirmBtn" onclick="hidePopup()" type="button" value="确认">
+            </div>
+        </div>
     </div>
 
     <!--添加数据对话框表单-->
@@ -127,6 +172,15 @@
            %>
 
         }
+    }
+
+    function showPopup(){
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "block";
+    }
+    function hidePopup(){
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
     }
 </script>
 </html>
