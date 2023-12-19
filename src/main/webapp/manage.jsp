@@ -41,33 +41,27 @@
     <input id="show-Popup" onclick="showPopup()" type="button" value="新增">
     <div id="overlay">
         <div class="popup">
-            <p class="popup_title">添加用户</p>
+            <p class="popup_title">添加书籍</p>
             <div class="container">
                 <form action="${pageContext.request.contextPath}/addUserServlet" method="post">
                     <div class="form-group">
-                        <label for="name">用户名：</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名">
+                        <label for="name" style="display:inline-block;width:100px;text-align:left">作者：</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="请输入作者">
                     </div>
 
                     <div class="form-group">
-                        <label for="uid">年龄：</label>
-                        <input type="text" class="form-control" id="uid" name="uid" placeholder="请输入年龄">
+                        <label for="book" style="display:inline-block;width:100px;text-align:left">书名：</label>
+                        <input type="text" class="form-control" id="book" name="book" placeholder="请输入书名">
                     </div>
 
                     <div class="form-group">
-                        <label for="phone">手机号：</label>
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="请输入手机号"/>
+                        <label for="price" style="display:inline-block;width:100px;text-align:left">价格：</label>
+                        <input type="text" class="form-control" name="price" id="price" placeholder="请输入价格"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">邮箱：</label>
-                        <input type="text" class="form-control" name="email"  id="email" placeholder="请输入邮箱地址"/>
-                    </div>
-
-                    <div class="form-group">
-                        <label >是否为管理员：</label>
-                        <input type="radio" name="true" value="true" checked="checked"/>是
-                        <input type="radio" name="false" value="false" />否
+                        <label for="stock" style="display:inline-block;width:100px;text-align:left">库存：</label>
+                        <input type="text" class="form-control" name="stock"  id="stock" placeholder="请输入库存"/>
                     </div>
                 </form>
             </div>

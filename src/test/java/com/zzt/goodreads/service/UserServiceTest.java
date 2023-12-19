@@ -68,7 +68,7 @@ class UserServiceTest {
 
     @Test
     void delete() {
-        a.setPhone("22");
+        a.setPhone("15896153901");
         userService.delete(a);
     }
 }
