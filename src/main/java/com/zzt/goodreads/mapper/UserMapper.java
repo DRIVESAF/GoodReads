@@ -21,4 +21,6 @@ public interface UserMapper {
     void updateInfoByUserId(User user);
 
     List <User> selectAll();
+
+    void delete(User user);
 }

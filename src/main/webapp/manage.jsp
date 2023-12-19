@@ -16,7 +16,7 @@
     <div class="nav">
         <h3 class="title">
             <a href="javascript:" class="active">书籍管理</a>
-            <a href="javascript:">用户管理</a>
+            <a href="manager-user.jsp">用户管理</a>
             <a href="javascript:">书籍分类管理</a>
             <a href="javascript:">订单管理</a>
         </h3>
