@@ -76,3 +76,22 @@ table tfoot tr td {
 .nav .title a {
     text-decoration: none;
 }
+
+.title a{
+    color:#008c8c;
+}
+
+.title a:active {
+    color: orange; /*鼠标点击时的颜色*/
+}
+
+
+.title a:hover {
+    color: orange; /*鼠标移动到链接的颜色*/
+    text-decoration: underline;
+}
+
+.w h1{
+    color: orange;
+    text-align: center;
+}

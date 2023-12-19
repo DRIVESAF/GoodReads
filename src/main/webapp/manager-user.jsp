@@ -12,13 +12,12 @@
 </head>
 
 <body class="w">
+<h1>用户管理</h1>
 <form action="/userManage">
     <div class="nav">
         <h3 class="title">
             <a href="manage.jsp">书籍管理</a>
             <a href="javascript:" class="active">用户管理</a>
-            <a href="javascript:">书籍分类管理</a>
-            <a href="javascript:">订单管理</a>
         </h3>
     </div>
 

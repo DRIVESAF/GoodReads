@@ -12,13 +12,12 @@
 </head>
 
 <body class="w">
+<h1>图书管理</h1>
 <form action="/book">
     <div class="nav">
         <h3 class="title">
-            <a href="javascript:" class="active">书籍管理</a>
+            <a href="javascript:" class="active">图书管理</a>
             <a href="manager-user.jsp">用户管理</a>
-            <a href="javascript:">书籍分类管理</a>
-            <a href="javascript:">订单管理</a>
         </h3>
     </div>
 
