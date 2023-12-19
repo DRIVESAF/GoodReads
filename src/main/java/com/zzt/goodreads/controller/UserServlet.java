@@ -52,21 +52,13 @@ public class UserServlet extends HttpServlet {
         user.setUserId(Integer.parseInt(userId));
         user.setName(name);
         System.out.println(user);
-        //调用业务逻辑
-        ResponseUtils resp;
         try {
             userService.resetUserInfo(user);
-            // 响应结果, "0" 代表处理成功,非 "0"代表处理失败
             HttpSession session = request.getSession();
             session.setAttribute("user",user);
             request.getRequestDispatcher("user.jsp").forward(request,response);
         } catch (Exception e) {
             e.printStackTrace();
-            resp = new ResponseUtils(e.getClass().getSimpleName(), e.getMessage());
         }
-        // 返回JSON结果
-
-
     }
-
 }

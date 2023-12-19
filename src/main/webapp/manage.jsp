@@ -13,14 +13,14 @@
 
 <body class="w">
 <h1>图书管理</h1>
-<form action="/book">
+
     <div class="nav">
         <h3 class="title">
             <a href="javascript:" class="active">图书管理</a>
             <a href="manager-user.jsp">用户管理</a>
         </h3>
     </div>
-
+<form action="/book">
     <!--搜索表单-->
     <div class="search">
 
@@ -34,45 +34,53 @@
         <button>查询</button>
         <input type="button" value="删除" class="del">
     </div>
-
+</form>
     <!--按钮-->
 
     <input id="show-Popup" onclick="showPopup()" type="button" value="新增">
-    <div id="overlay">
-        <div class="popup">
-            <p class="popup_title">添加书籍</p>
-            <div class="container">
-                <form action="${pageContext.request.contextPath}/addUserServlet" method="post">
+    <form action="/addBook">
+        <div id="overlay">
+            <div class="popup">
+                <p class="popup_title">添加书籍</p>
+                <div class="container">
                     <div class="form-group">
                         <label for="name" style="display:inline-block;width:100px;text-align:left">作者：</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="请输入作者">
+                        <input type="text" class="form-control" id="name" name="author" placeholder="请输入作者">
                     </div>
 
                     <div class="form-group">
                         <label for="book" style="display:inline-block;width:100px;text-align:left">书名：</label>
-                        <input type="text" class="form-control" id="book" name="book" placeholder="请输入书名">
+                        <input type="text" class="form-control" id="book" name="bookName" placeholder="请输入书名">
                     </div>
 
                     <div class="form-group">
                         <label for="price" style="display:inline-block;width:100px;text-align:left">价格：</label>
-                        <input type="text" class="form-control" name="price" id="price" placeholder="请输入价格"/>
+                        <input type="text" class="form-control" id="price" name="bookPrice" placeholder="请输入价格"/>
                     </div>
 
                     <div class="form-group">
                         <label for="stock" style="display:inline-block;width:100px;text-align:left">库存：</label>
-                        <input type="text" class="form-control" name="stock"  id="stock" placeholder="请输入库存"/>
+                        <input type="text" class="form-control" id="stock" name="stock" placeholder="请输入库存"/>
                     </div>
-                </form>
-            </div>
-            <div class="popup_btn">
-                <input class="cancelBtn" onclick="hidePopup()" type="button" value="取消">
-                <input class="confirmBtn" onclick="hidePopup()" type="button" value="确认">
+
+                    <div class="form-group">
+                        <label for="stock" style="display:inline-block;width:100px;text-align:left">类型：</label>
+                        <input type="text" class="form-control" id="type" name="type" placeholder="请输入类型"/>
+
+                    </div>
+                </div>
+                <div class="popup_btn">
+                    <input class="cancelBtn" onclick="hidePopup()" type="button" value="取消">
+
+                    <button class="confirmBtn"  >确认</button>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 
+<form action="/book">
     <!--添加数据对话框表单-->
-    <table width="600" border="1" cellspacing="0">
+    <table>
         <thead>
         <tr>
             <th>编号</th>
@@ -150,6 +158,7 @@
     var btnDel = document.getElementsByClassName("dele")
     var a  = document.getElementsByClassName("a")
     var b = document.getElementsByClassName("b")
+    var overlay = document.getElementById("overlay");
     window.onload = function () {
         btnDel.οnclick = function () {
            <%
@@ -160,12 +169,11 @@
     }
 
     function showPopup(){
-        var overlay = document.getElementById("overlay");
         overlay.style.display = "block";
     }
     function hidePopup(){
-        var overlay = document.getElementById("overlay");
         overlay.style.display = "none";
     }
+
 </script>
 </html>

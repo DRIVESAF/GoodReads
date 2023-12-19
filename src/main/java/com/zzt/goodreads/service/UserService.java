@@ -95,4 +95,13 @@ public class UserService {
             return user;
         });
     }
+
+    public void registerAdmin(User user){
+            MyBatisUtils.executeUpdate(sqlSession -> {
+                UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+                mapper.addAdmin(user);
+                return user;
+            });
+    }
+
 }
