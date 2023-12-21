@@ -672,43 +672,5 @@
     }
 
 
-
-
-    //添加 cookie
-    function cp_add_cookie(num){
-        setCookie("cp_keynum",num,2);
-    }
-    //查找
-    function cp_seek_cookie(){
-        var cp_keynum=getCookie("cp_keynum");
-        var find_result = document.getElementById("row hid");
-        find_result.innerHTML = "cp_keynum == " + cp_keynum;
-    }
-
-
-    //设置 cookie 值的函数,创建一个函数用于存储访问者的名字
-    //cname:名称，必须字母
-    //cvalue：值
-    //exdays：过期时间（天）
-    function setCookie(cname,cvalue,exdays){
-        var d = new Date();
-        d.setTime(d.getTime()+(exdays*24*60*60*1000));
-        var expires = "expires="+d.toGMTString();
-        document.cookie = cname+"="+cvalue+"; "+expires;
-    }
-    //获取 cookie 值的函数,创建一个函数用户返回指定 cookie 的值
-    //cname:名称，你之前设置的名称
-    function getCookie(cname){
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0; i<ca.length; i++) {
-            var c = ca[i].trim();
-            if (c.indexOf(name)==0) return c.substring(name.length,c.length);
-        }
-        return "";
-    }
-
-
-
 </script>
 </html>

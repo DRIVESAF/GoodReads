@@ -19,6 +19,7 @@ import java.io.IOException;
 @WebServlet("/resetPassword")
 public class ResetPasswordServlet extends HttpServlet {
     private UserService userService = new UserService();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
@@ -26,23 +27,26 @@ public class ResetPasswordServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String phone = req.getParameter("phone");
-        String originP= req.getParameter("originP");
-        String newP = req.getParameter("newP");
-        User user = new User();
-        user.setPhone(phone);
-        user.setPassword(newP);
-        if(userService.login(phone,originP) == null){
-            req.getRequestDispatcher("/repsw.jsp").forward(req,resp);
-        } else {
-            try{
+        resp.setContentType("text/html;charset=UTF-8");
+        try {
+            String phone = req.getParameter("phone");
+            String originP = req.getParameter("originP");
+            String newP = req.getParameter("newP");
+            User user = new User();
+            user.setPhone(phone);
+            user.setPassword(newP);
+            if (userService.login(phone, originP) == null) {
+                req.getRequestDispatcher("/repsw.jsp").forward(req, resp);
+            } else {
                 userService.resetPassword(user);
                 HttpSession session = req.getSession();
-                session.setAttribute("user",user);
-                req.getRequestDispatcher("login.jsp").forward(req,resp);
-            } catch (Exception e){
-                e.printStackTrace();
+                session.setAttribute("user", user);
+                req.getRequestDispatcher("login.jsp").forward(req, resp);
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+            String script = "<script>alert('账号与密码不匹配！');setTimeout(function(){window.location.href='/login.jsp';},1000);</script>";
+            resp.getWriter().println(script);
         }
-}
+    }
 }
