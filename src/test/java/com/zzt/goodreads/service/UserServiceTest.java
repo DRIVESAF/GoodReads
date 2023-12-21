@@ -37,8 +37,9 @@ class UserServiceTest {
     void add(){
         a.setUserName("h");
         a.setEmail("123@121");
-        a.setPhone("12345678911");
-        a.setPassword("123456");
+        a.setPhone("111");
+        a.setPassword("111");
+        a.setIsAdmin(true);
         userService.register(a);
     }
 
@@ -68,7 +69,7 @@ class UserServiceTest {
 
     @Test
     void delete() {
-        a.setPhone("15896153901");
+        a.setPhone("22");
         userService.delete(a);
     }
 }

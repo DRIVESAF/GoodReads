@@ -65,8 +65,8 @@
 
                     <div class="form-group">
                         <label >是否为管理员：</label>
-                        <input type="radio" name="true" value="true" checked="checked"/>是
-                        <input type="radio" name="false" value="false" />否
+                        <input type="radio" name="checked" value="true" checked="checked"/>是
+                        <input type="radio" name="checked" value="false" />否
                     </div>
                 </form>
             </div>

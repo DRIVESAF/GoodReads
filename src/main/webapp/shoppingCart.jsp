@@ -674,5 +674,7 @@
     }
 
 
+    var elements = document.getElementsByClassName( "row hid");
+    console.log(elements)
 </script>
 </html>
