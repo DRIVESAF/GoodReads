@@ -45,7 +45,7 @@ public class ResetPasswordServlet extends HttpServlet {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            String script = "<script>alert('账号与密码不匹配！');setTimeout(function(){window.location.href='/login.jsp';},1000);</script>";
+            String script = "<script>alert('账号与密码不匹配！');setTimeout(function(){window.location.href='/repsw.jsp';},1000);</script>";
             resp.getWriter().println(script);
         }
     }
