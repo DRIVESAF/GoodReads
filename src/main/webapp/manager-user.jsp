@@ -20,21 +20,23 @@
             <a href="javascript:" class="active">用户管理</a>
         </h3>
     </div>
-<form action="/userManage">
+
     <!--搜索表单-->
     <div class="search">
-
+<form action="/userManage">
         <div class="author">
             <input placeholder="用户名">
         </div>
-
-        <div class="bookName">
+        <div class="phone">
             <input placeholder="手机号" name="phone">
         </div>
         <button>查询</button>
-        <input type="button" value="删除" class="del">
-    </div>
 </form>
+        <form action="/deleteUser">
+            <button>删除</button>
+        </form>
+</div>
+
     <!--按钮-->
 
     <input id="show-Popup" onclick="showPopup()" type="button" value="新增">
@@ -164,16 +166,9 @@
 
 </body>
 <script type="text/javascript">
-    var btnDel = document.getElementsByClassName("dele")
+    var btnDel = document.getElementsByClassName("del")
     var a  = document.getElementsByClassName("a")
     var b = document.getElementsByClassName("b")
-    window.onload = function () {
-        btnDel.οnclick = function () {
-            <%
-                userService.delete(user);
-            %>
-        }
-    }
 
     function showPopup(){
         var overlay = document.getElementById("overlay");
