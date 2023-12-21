@@ -229,9 +229,8 @@
         }
 
         .car .name span {
-            line-height: 1;
-            margin-top: 8px;
-            margin-bottom: 8px;
+            margin-left: -10px;
+            margin-top: 50px;
             font-size: 18px;
             font-weight: normal;
             text-overflow: ellipsis;
@@ -463,7 +462,7 @@
         <c:forEach items="${books}" var="book">
             {
             "imgUrl": "./images/cover/${book.bookCover}",
-            "proName": "${book.bookName}",
+            "proName": "《${book.bookName}》",
             "proPrice": "${book.bookPrice}",
             "proComm": "${book.comment}"
         },
@@ -659,7 +658,6 @@
             sum += num;
             document.getElementById("price_num").innerText = sum;
         }
-
 
     }
 

@@ -14,6 +14,7 @@ import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.util.List;
 
 
 /**
@@ -21,7 +22,7 @@ import java.io.IOException;
  * @Author zhy
  * @Date 2023/12/11 8:23
  */
-@WebServlet("/book/*")
+@WebServlet("/book")
 @Slf4j
 public class BookServlet extends HttpServlet {
 
@@ -41,16 +42,16 @@ public class BookServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String bookName = req.getParameter("bookName");
-        resp.setContentType("text/html:charset=UTF-8");
-        resp.setCharacterEncoding("UTF-8");
-        try {
-            Book book =bookService.selectByBookName(bookName);
-            HttpSession session = req.getSession();
-            session.setAttribute("book",book);
-            req.getRequestDispatcher("manage.jsp").forward(req,resp);
-        } catch (Exception e) {
-            e.printStackTrace();
+            try {
+                Book book =bookService.selectByBookName(bookName);
+                HttpSession session = req.getSession();
+                session.setAttribute("book",book);
+                req.getRequestDispatcher("manage.jsp").forward(req,resp);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
-    }
+
+
 
 }

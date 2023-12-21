@@ -95,3 +95,6 @@ table tfoot tr td {
     color: orange;
     text-align: center;
 }
+.phone{
+    display: inline;
+}

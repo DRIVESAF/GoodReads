@@ -20,10 +20,10 @@
             <a href="manager-user.jsp">用户管理</a>
         </h3>
     </div>
-<form action="/book">
+
     <!--搜索表单-->
     <div class="search">
-
+        <form action="/book">
         <div class="author">
             <input placeholder="作者">
         </div>
@@ -31,10 +31,15 @@
         <div class="bookName">
             <input placeholder="书名" name="bookName">
         </div>
+            &nbsp;&nbsp;&nbsp;
         <button>查询</button>
-        <input type="button" value="删除" class="del">
+            <form action="/deleteBook">
+                &nbsp;&nbsp;&nbsp;<button>删除</button>
+            </form>
+        </form>
+
     </div>
-</form>
+
     <!--按钮-->
 
     <input id="show-Popup" onclick="showPopup()" type="button" value="新增">
@@ -112,7 +117,7 @@
                         ${book.author}
                 </td>
                 <td>
-                        ${book.bookName}
+                        《${book.bookName}》
                 </td>
                 <td>
                         ${book.bookPrice}
@@ -148,25 +153,16 @@
             </td>
 
         </tr>
-        <%} %>
+        <% } %>
         </tbody>
     </table>
 </form>
 
 </body>
 <script type="text/javascript">
-    var btnDel = document.getElementsByClassName("dele")
     var a  = document.getElementsByClassName("a")
     var b = document.getElementsByClassName("b")
     var overlay = document.getElementById("overlay");
-    window.onload = function () {
-        btnDel.οnclick = function () {
-           <%
-             bookService.delete(book);
-           %>
-
-        }
-    }
 
     function showPopup(){
         overlay.style.display = "block";

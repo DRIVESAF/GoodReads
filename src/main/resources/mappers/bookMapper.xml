@@ -4,7 +4,7 @@
 
     <select id="selectByBookName" parameterType="String" resultType="com.zzt.goodreads.entity.Book">
         <bind name="name" value="'%' + name + '%'"/>
-        select * from book where book_name like #{name}
+        select * from book where book_name = #{value}
     </select>
 
     <select id="selectAll" resultType="com.zzt.goodreads.entity.Book">
