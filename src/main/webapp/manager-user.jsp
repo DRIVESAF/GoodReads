@@ -13,14 +13,14 @@
 
 <body class="w">
 <h1>用户管理</h1>
-<form action="/userManage">
+
     <div class="nav">
         <h3 class="title">
             <a href="manage.jsp">书籍管理</a>
             <a href="javascript:" class="active">用户管理</a>
         </h3>
     </div>
-
+<form action="/userManage">
     <!--搜索表单-->
     <div class="search">
 
@@ -34,51 +34,53 @@
         <button>查询</button>
         <input type="button" value="删除" class="del">
     </div>
-
+</form>
     <!--按钮-->
 
     <input id="show-Popup" onclick="showPopup()" type="button" value="新增">
-    <div id="overlay">
-        <div class="popup">
-            <p class="popup_title">添加用户</p>
-            <div class="container">
-                <form action="${pageContext.request.contextPath}/addUserServlet" method="post">
-                    <div class="form-group">
-                        <label for="name"  style="display:inline-block;width:100px;text-align:left">用户名：</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名">
-                    </div>
+    <form action="/addUser">
+        <div id="overlay">
+            <div class="popup">
+                <p class="popup_title">添加用户</p>
+                <div class="container">
+                        <div class="form-group">
+                            <label for="name"  style="display:inline-block;width:100px;text-align:left">用户名：</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="password" style="display:inline-block;width:100px;text-align:left">密码：</label>
-                        <input type="text" class="form-control" id="password" name="password" placeholder="请输入密码">
-                    </div>
+                        <div class="form-group">
+                            <label for="password" style="display:inline-block;width:100px;text-align:left">密码：</label>
+                            <input type="text" class="form-control" id="password" name="password" placeholder="请输入密码">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="phone" style="display:inline-block;width:100px;text-align:left">手机号：</label>
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="请输入手机号"/>
-                    </div>
+                        <div class="form-group">
+                            <label for="phone" style="display:inline-block;width:100px;text-align:left">手机号：</label>
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="请输入手机号"/>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="email" style="display:inline-block;width:100px;text-align:left">邮箱：</label>
-                        <input type="text" class="form-control" name="email"  id="email" placeholder="请输入邮箱"/>
-                    </div>
+                        <div class="form-group">
+                            <label for="email" style="display:inline-block;width:100px;text-align:left">邮箱：</label>
+                            <input type="text" class="form-control" name="email"  id="email" placeholder="请输入邮箱"/>
+                        </div>
 
-                    <div class="form-group">
-                        <label >是否为管理员：</label>
-                        <input type="radio" name="checked" value="true" checked="checked"/>是
-                        <input type="radio" name="checked" value="false" />否
-                    </div>
-                </form>
-            </div>
-            <div class="popup_btn">
-                <input class="cancelBtn" onclick="hidePopup()" type="button" value="取消">
-                <input class="confirmBtn" onclick="hidePopup()" type="button" value="确认">
+                        <div class="form-group">
+                            <label >是否为管理员：</label>
+                            <input type="radio" name="isAdmin" value="true" checked="checked"/>是
+                            <input type="radio" name="isAdmin" value="false" />否
+                        </div>
+                </div>
+                <div class="popup_btn">
+                    <input class="cancelBtn" onclick="hidePopup()" type="button" value="取消">
+                    <button class="confirmBtn">确认</button>
+                </div>
+>>>>>>> 273af3bab6fa1843a177ed2c515290b55971a9f8
             </div>
         </div>
-    </div>
+    </form>
 
+<form action="/userManage">
     <!--添加数据对话框表单-->
-    <table width="600" border="1" cellspacing="0">
+    <table>
         <thead>
         <tr>
             <th>编号</th>

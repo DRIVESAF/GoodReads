@@ -56,6 +56,10 @@
                 <div class="item follows"><a href="${pageContext.request.contextPath}/login.jsp" class="set-btn">
                     <i class="iconfont icon-a-shezhi-shucaidanshezhi"></i>退出登录</a></div>
             </div>
+            <div class="study-info clearfix" style="position: absolute;right: 150px">
+                <div class="item follows"><a href="${pageContext.request.contextPath}/repsw.jsp" class="set-btn">
+                    <i class="iconfont icon-a-shezhi-shucaidanshezhi"></i>修改密码</a></div>
+            </div>
         </div>
     </div>
 

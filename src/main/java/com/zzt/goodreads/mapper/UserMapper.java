@@ -16,6 +16,8 @@ public interface UserMapper {
 
     void add(User user);
 
+    void addAdmin(User user);
+
     void updatePasswordByUserId(User user);
 
     void updateInfoByUserId(User user);

@@ -13,6 +13,12 @@
         VALUES (#{userName},#{phone}, #{password},#{email})
     </insert>
 
+    <insert id="addAdmin" parameterType="com.zzt.goodreads.entity.User">
+        INSERT
+        INTO  `user`(user_name,phone,password,email,is_admin)
+        VALUES (#{userName},#{phone}, #{password},#{email},#{isAdmin})
+    </insert>
+
     <update id="updatePasswordByUserId" parameterType="com.zzt.goodreads.entity.User">
         UPDATE `user`
         SET password = #{password} WHERE user_id = #{userId}

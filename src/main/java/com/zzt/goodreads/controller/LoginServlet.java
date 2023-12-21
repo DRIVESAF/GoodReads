@@ -57,12 +57,7 @@ public class LoginServlet extends HttpServlet {
             // 登录失败，service会执行 throw new LoginException 操作，在这里捕获，并将失败原因返回给客户端
             resp = new ResponseUtils(e.getClass().getSimpleName(), e.getMessage());
             String script = "<script>alert('登陆失败！请重新登录！');setTimeout(function(){window.location.href='/login.jsp';},1000);</script>";
-
             response.getWriter().println(script);
-        }
-            // 返回JSON结果
-//            response.getWriter().println(resp.toJsonString());
-
+        };
     }
-
 }

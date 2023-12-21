@@ -14,8 +14,8 @@
 
     <insert id="insert" parameterType="com.zzt.goodreads.entity.Book">
         INSERT
-        INTO `book`(book_id, book_name, author, book_cover, book_price, collect, comment, browse, book_intro,book_stork, book_type)
-        VALUES (#{bookId},#{bookName},#{author},#{bookCover},#{bookPrice},#{collect},#{comment},#{browse},#{bookIntro},#{bookType},#{bookType})
+        INTO `book`(book_id, book_name, author, book_price,book_stork, book_type)
+        VALUES (#{bookId},#{bookName},#{author},#{bookPrice},#{bookStork},#{bookType})
     </insert>
 
     <update id="delete" parameterType="com.zzt.goodreads.entity.Book">
