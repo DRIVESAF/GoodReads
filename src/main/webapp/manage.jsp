@@ -31,11 +31,13 @@
         <div class="bookName">
             <input placeholder="书名" name="bookName">
         </div>
+            &nbsp;&nbsp;&nbsp;
         <button>查询</button>
+            <form action="/deleteBook">
+                &nbsp;&nbsp;&nbsp;<button>删除</button>
+            </form>
         </form>
-        <form action="/deleteBook">
-           <button>删除</button>
-        </form>
+
     </div>
 
     <!--按钮-->
@@ -115,7 +117,7 @@
                         ${book.author}
                 </td>
                 <td>
-                        ${book.bookName}
+                        《${book.bookName}》
                 </td>
                 <td>
                         ${book.bookPrice}

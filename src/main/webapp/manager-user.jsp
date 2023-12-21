@@ -30,11 +30,13 @@
         <div class="phone">
             <input placeholder="手机号" name="phone">
         </div>
+    &nbsp;&nbsp;&nbsp;
         <button>查询</button>
+    <form action="/deleteUser">
+        &nbsp;&nbsp;&nbsp; <button>删除</button>
+    </form>
 </form>
-        <form action="/deleteUser">
-            <button>删除</button>
-        </form>
+
 </div>
 
     <!--按钮-->
