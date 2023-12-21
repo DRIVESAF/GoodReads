@@ -21,7 +21,7 @@
 
     <update id="updatePasswordByUserId" parameterType="com.zzt.goodreads.entity.User">
         UPDATE `user`
-        SET password = #{password} WHERE user_id = #{userId}
+        SET password = #{password} WHERE phone = #{phone}
     </update>
 
     <update id="updateInfoByUserId" parameterType="com.zzt.goodreads.entity.User">

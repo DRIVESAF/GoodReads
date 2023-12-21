@@ -12,22 +12,22 @@
 <body class="login-body">
 <div class="login-box">
     <h2><img src="images/GoodReads.png"></h2>
-    <form action="" method="post">
+    <form action="/resetPassword" method="post">
         <div class="user-box">
             <input type="text" name="phone" required>
             <label>手机号</label>
         </div>
         <div class="user-box">
-            <input type="password" name="password" required>
+            <input type="password" name="originP" required>
             <label>原密码</label>
         </div>
 
         <div class="user-box">
-            <input type="password" name="password" required>
+            <input type="password" name="newP" required>
             <label>新密码</label>
         </div>
         <div class="log" style="text-align: center">
-            <a href="${pageContext.request.contextPath}/login.jsp">
+            <a href="">
                 <span></span>
                 <span></span>
                 <span></span>
